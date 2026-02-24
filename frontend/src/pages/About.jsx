@@ -8,30 +8,35 @@ const About = () => {
       <div className="about-section">
         <h2>Centre for Entrepreneurship and Rapid Incubation</h2>
         <p className="about-description">
-          UMP CFERI is a dynamic entrepreneurship hub dedicated to fostering innovation, 
-          supporting student startups, and driving economic growth through structured 
-          incubation programs and mentorship.
+          In a region thirsty for learning, UMP assumes a leadership role in providing the province 
+          and the country with academic avenues for advancement. CFERI embodies this vision by 
+          fostering innovation, supporting student startups, and driving economic growth through 
+          structured incubation programs and mentorship.
         </p>
       </div>
 
       <div className="about-grid">
         <div className="about-card">
           <h3 className="about-card-title">Our Mission</h3>
-          <p>To empower students with entrepreneurial skills, resources, and mentorship 
-          needed to transform innovative ideas into sustainable businesses.</p>
+          <p>To offer high quality educational and training opportunities that foster the holistic 
+          development of students through teaching and learning, research and scholarship, and 
+          engagement, in collaboration with strategic partners.</p>
         </div>
         <div className="about-card">
           <h3 className="about-card-title">Our Vision</h3>
-          <p>To be the leading entrepreneurship centre in South Africa, producing 
-          successful student entrepreneurs who contribute to economic development.</p>
+          <p>To be an African University leading in creating opportunities for sustainable 
+          development through innovation.</p>
         </div>
         <div className="about-card">
           <h3 className="about-card-title">Our Values</h3>
           <ul className="about-list">
-            <li className="about-list-item">✓ Innovation</li>
-            <li className="about-list-item">✓ Excellence</li>
-            <li className="about-list-item">✓ Collaboration</li>
-            <li className="about-list-item">✓ Impact</li>
+            <li className="about-list-item"><strong>Excellence:</strong> Upholding highest standards</li>
+            <li className="about-list-item"><strong>Integrity:</strong> Honesty and fairness</li>
+            <li className="about-list-item"><strong>Diversity:</strong> Celebrating different cultures</li>
+            <li className="about-list-item"><strong>Collaboration:</strong> Engaging with stakeholders</li>
+            <li className="about-list-item"><strong>Adaptability:</strong> Responding to change</li>
+            <li className="about-list-item"><strong>Relevance:</strong> Context-responsive programs</li>
+            <li className="about-list-item"><strong>Inspiration:</strong> Encouraging others to do more</li>
           </ul>
         </div>
       </div>

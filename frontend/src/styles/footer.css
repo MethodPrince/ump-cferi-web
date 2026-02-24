@@ -1,17 +1,21 @@
+@import './ump-theme.css';
+
 .footer {
-  background: #003366;
+  background: var(--ump-navy);
   color: white;
-  padding: 1.5rem;
+  padding: 2rem 1rem;
   margin-top: 3rem;
   text-align: center;
+  font-family: Arial, sans-serif;
 }
 
 .footer p {
   margin: 0.5rem 0;
+  font-size: 0.95rem;
 }
 
 .footer a {
-  color: #ffd700;
+  color: var(--ump-gold);
   text-decoration: none;
   transition: color 0.3s;
 }
@@ -19,4 +23,13 @@
 .footer a:hover {
   color: white;
   text-decoration: underline;
+}
+
+.footer-tagline {
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-top: 1rem;
+  color: var(--ump-gold);
 }

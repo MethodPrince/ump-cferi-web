@@ -1,49 +1,69 @@
+@import './ump-theme.css';
+
 .about-container {
   max-width: 1200px;
   margin: 2rem auto;
   padding: 0 1rem;
+  animation: ump-fadeIn 0.5s ease-out;
 }
 
 .about-title {
-  color: #003366;
+  color: var(--ump-navy);
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #003366;
+  border-bottom: 3px solid var(--ump-gold);
   padding-bottom: 0.5rem;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
 }
 
 .about-section {
   margin-bottom: 3rem;
 }
 
+.about-section h2 {
+  color: var(--ump-navy);
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
 .about-description {
   font-size: 1.1rem;
   line-height: 1.8;
   margin-top: 1rem;
-  color: #444;
+  color: var(--ump-black);
+  font-family: Arial, sans-serif;
 }
 
 .about-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .about-card {
   padding: 1.5rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--ump-gray);
   border-radius: 8px;
-  background: #f9f9f9;
-  transition: box-shadow 0.3s;
+  background: var(--ump-white);
+  transition: all 0.3s;
 }
 
 .about-card:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+  border-color: var(--ump-navy);
+  box-shadow: 0 5px 15px rgba(36, 39, 83, 0.1);
 }
 
 .about-card-title {
-  color: #003366;
+  color: var(--ump-navy);
   margin-bottom: 1rem;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  text-transform: uppercase;
   font-size: 1.3rem;
 }
 
@@ -54,7 +74,8 @@
 
 .about-list-item {
   margin-bottom: 0.5rem;
-  color: #555;
+  color: var(--ump-black);
+  font-family: Arial, sans-serif;
 }
 
 .about-timeline {
@@ -65,20 +86,29 @@
 .about-timeline-item {
   padding: 1rem;
   margin-bottom: 1rem;
-  border-left: 3px solid #003366;
-  background: #f5f5f5;
+  border-left: 3px solid var(--ump-gold);
+  background: var(--ump-gray-light);
   border-radius: 0 8px 8px 0;
+  transition: all 0.3s;
+}
+
+.about-timeline-item:hover {
+  border-left-width: 5px;
+  background: var(--ump-white);
+  box-shadow: 0 2px 8px rgba(36, 39, 83, 0.1);
 }
 
 .about-timeline-year {
-  color: #003366;
+  color: var(--ump-navy);
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
 }
 
 .about-stat-number {
-  color: #003366;
+  color: var(--ump-navy);
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 0.5rem;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
 }

@@ -3,16 +3,16 @@ import '../styles/header.css';
 
 const Header = ({ admin }) => {
   const location = useLocation();
-  
-  // Check if current path is admin route
   const isAdminRoute = location.pathname.startsWith('/admin');
 
-  // If we're on an admin route and admin is logged in, show admin header
   if (isAdminRoute && admin) {
     return (
       <nav className="header admin-header">
         <div className="header-container">
-          <Link to="/admin/dashboard" className="logo">UMP CFERI Admin</Link>
+          <Link to="/admin/dashboard" className="logo-container">
+            <img src="/images/ump-logo.jpg" alt="UMP Logo" className="ump-logo" />
+            <span className="logo-text">ADMIN</span>
+          </Link>
           <div className="nav-links">
             <Link to="/admin/dashboard" className="nav-link">Dashboard</Link>
             <Link to="/admin/messages" className="nav-link">Messages</Link>
@@ -22,12 +22,14 @@ const Header = ({ admin }) => {
     );
   }
 
-  // If we're on an admin route but not logged in, show minimal header
   if (isAdminRoute && !admin) {
     return (
       <nav className="header">
         <div className="header-container">
-          <Link to="/" className="logo">UMP CFERI</Link>
+          <Link to="/" className="logo-container">
+            <img src="/images/ump-logo.jpg" alt="UMP Logo" className="ump-logo" />
+            <span className="logo-text">UMP CFERI</span>
+          </Link>
           <div className="nav-links">
             <Link to="/admin/login" className="nav-link admin-login-link">Admin Login</Link>
           </div>
@@ -36,11 +38,13 @@ const Header = ({ admin }) => {
     );
   }
 
-  // Regular public site header
   return (
     <nav className="header">
       <div className="header-container">
-        <Link to="/" className="logo">UMP CFERI</Link>
+        <Link to="/" className="logo-container">
+          <img src="/images/ump-logo.jpg" alt="UMP Logo" className="ump-logo" />
+          <span className="logo-text">UMP CFERI</span>
+        </Link>
         <div className="nav-links">
           <Link to="/" className="nav-link">Home</Link>
           <Link to="/about" className="nav-link">About</Link>

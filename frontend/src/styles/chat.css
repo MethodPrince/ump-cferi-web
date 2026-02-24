@@ -1,3 +1,5 @@
+@import './ump-theme.css';
+
 .chat-container {
   position: fixed;
   bottom: 20px;
@@ -6,31 +8,35 @@
 }
 
 .chat-button {
-  background: #003366;
+  background: var(--ump-navy);
   color: white;
   border: none;
   border-radius: 50px;
   padding: 15px 25px;
   cursor: pointer;
   font-size: 16px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 10px rgba(36, 39, 83, 0.3);
   transition: all 0.3s;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .chat-button:hover {
-  background: #004488;
+  background: var(--ump-navy-light);
   transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(36, 39, 83, 0.4);
 }
 
 .chat-window {
   width: 300px;
   height: 400px;
   background: white;
-  border: 1px solid #ddd;
+  border: 1px solid var(--ump-gray);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 20px rgba(36, 39, 83, 0.2);
   animation: slideIn 0.3s;
 }
 
@@ -46,7 +52,7 @@
 }
 
 .chat-header {
-  background: #003366;
+  background: var(--ump-navy);
   color: white;
   padding: 12px;
   display: flex;
@@ -58,6 +64,8 @@
 .chat-header h4 {
   margin: 0;
   font-size: 1.1rem;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  text-transform: uppercase;
 }
 
 .chat-close-btn {
@@ -78,7 +86,7 @@
   flex: 1;
   padding: 12px;
   overflow-y: auto;
-  background: #f9f9f9;
+  background: var(--ump-gray-light);
 }
 
 .chat-message-user {
@@ -88,31 +96,35 @@
   margin-bottom: 8px;
   max-width: 80%;
   margin-left: auto;
+  border: 1px solid var(--ump-navy);
 }
 
 .chat-message-admin {
-  background: #f0f0f0;
+  background: white;
   padding: 8px 12px;
   border-radius: 15px 15px 15px 0;
   margin-bottom: 8px;
   max-width: 80%;
+  border: 1px solid var(--ump-gray);
 }
 
 .chat-message-sender {
   font-weight: bold;
   font-size: 0.8rem;
   margin-bottom: 4px;
-  color: #666;
+  color: var(--ump-navy);
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
 }
 
 .chat-message-text {
   word-wrap: break-word;
-  color: #333;
+  color: var(--ump-black);
+  font-family: Arial, sans-serif;
 }
 
 .chat-input-form {
   padding: 12px;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--ump-gray);
   background: white;
   border-radius: 0 0 10px 10px;
 }
@@ -120,35 +132,41 @@
 .chat-input {
   width: 100%;
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 2px solid var(--ump-gray);
   border-radius: 20px;
   margin-bottom: 8px;
   font-size: 0.9rem;
-  transition: border-color 0.3s;
+  transition: all 0.3s;
+  font-family: Arial, sans-serif;
 }
 
 .chat-input:focus {
   outline: none;
-  border-color: #003366;
+  border-color: var(--ump-navy);
 }
 
 .chat-send-btn {
   width: 100%;
   padding: 8px;
-  background: #003366;
+  background: var(--ump-navy);
   color: white;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: all 0.3s;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .chat-send-btn:hover {
-  background: #004488;
+  background: var(--ump-navy-light);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(36, 39, 83, 0.3);
 }
 
 .chat-user-form {
   padding: 12px;
-  border-top: 1px solid #ddd;
-  background: #f9f9f9;
+  border-top: 1px solid var(--ump-gray);
+  background: var(--ump-gray-light);
 }
