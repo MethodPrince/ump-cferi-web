@@ -1,0 +1,207 @@
+/* Admin Login */
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.admin-login-box {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  background: white;
+}
+
+.admin-login-box h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 1.5rem;
+}
+
+.admin-login-input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.admin-login-input:focus {
+  outline: none;
+  border-color: #003366;
+}
+
+.admin-login-button {
+  width: 100%;
+  padding: 12px;
+  background: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.admin-login-button:hover {
+  background: #004488;
+}
+
+.admin-login-error {
+  color: #dc3545;
+  margin-bottom: 1rem;
+  padding: 10px;
+  background: #f8d7da;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Admin Dashboard */
+.admin-dashboard-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #003366;
+}
+
+.admin-header h1 {
+  color: #003366;
+}
+
+.admin-welcome {
+  color: #666;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.admin-stat-card {
+  padding: 1.5rem;
+  background: #f0f0f0;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.admin-stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.admin-stat-card h3 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.admin-links {
+  margin-top: 2rem;
+}
+
+.admin-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #003366;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 1rem;
+  transition: background 0.3s;
+}
+
+.admin-link:hover {
+  background: #004488;
+}
+
+/* Admin Messages */
+.admin-messages-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.admin-messages-title {
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.admin-messages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.admin-message-card {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  transition: all 0.3s;
+}
+
+.admin-message-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-color: #003366;
+}
+
+.admin-message-sender {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.admin-message-email {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.admin-message-text {
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.admin-message-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-answered {
+  background: #d4edda;
+  color: #28a745;
+}
+
+.status-unanswered {
+  background: #f8d7da;
+  color: #dc3545;
+}
+
+.admin-message-date {
+  color: #999;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  text-align: right;
+}

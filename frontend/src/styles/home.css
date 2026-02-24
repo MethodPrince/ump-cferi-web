@@ -1,0 +1,45 @@
+.home-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.home-title {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.home-subtitle {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.home-card {
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.home-card h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.home-card p {
+  color: #666;
+  line-height: 1.6;
+}
