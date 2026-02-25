@@ -21,7 +21,7 @@ app.use("/api/admin", require("./routes/adminRoutes"));
 app.use("/api/businesses", require("./routes/businessRoutes"));
 app.use("/api/messages", require("./routes/messageRoutes"));
 app.use("/api/events", require("./routes/eventRoutes"));
-
+app.use("/api/mentors", require("./routes/mentorRoutes"));
 const PORT = process.env.PORT || 5000;
 
 // Connect to the database before starting the server

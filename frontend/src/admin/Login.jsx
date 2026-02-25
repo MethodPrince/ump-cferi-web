@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { loginAdmin, setAuthToken } from '../services/api';
+import { loginAdmin } from '../services/api';
 import { useNavigate } from 'react-router-dom';
 import '../styles/admin.css';
 
@@ -17,12 +17,7 @@ const Login = ({ setAdmin }) => {
     
     try {
       const { data } = await loginAdmin(email, password);
-      // Persist token and set Authorization header for subsequent requests
-      if (data.token) {
-        localStorage.setItem('adminToken', data.token);
-        setAuthToken(data.token);
-      }
-      // store admin object (includes name/email/token)
+      localStorage.setItem('admin', JSON.stringify(data));
       setAdmin(data);
       navigate('/admin/dashboard');
     } catch (err) {
@@ -36,52 +31,64 @@ const Login = ({ setAdmin }) => {
     <div className="admin-login-container">
       <div className="admin-login-box">
         <div className="admin-login-header">
+          <div className="admin-login-logo">
+            <img src="/images/ump-logo.jpg" alt="UMP Logo" />
+          </div>
           <h2>Admin Login</h2>
           <p>UMP CFERI Administration</p>
         </div>
         
-        {error && <div className="admin-login-error">{error}</div>}
-        
-        <form onSubmit={handleSubmit}>
-          <div className="admin-login-form-group">
-            <label htmlFor="email">Email Address</label>
-            <input
-              id="email"
-              type="email"
-              className="admin-login-input"
-              placeholder="admin@umpcferi.ac.za"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              disabled={loading}
-            />
-          </div>
+        <div className="admin-login-form">
+          {error && <div className="admin-login-error">{error}</div>}
           
-          <div className="admin-login-form-group">
-            <label htmlFor="password">Password</label>
-            <input
-              id="password"
-              type="password"
-              className="admin-login-input"
-              placeholder="••••••••"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
+          <form onSubmit={handleSubmit}>
+            <div className="admin-login-form-group">
+              <label htmlFor="email">Email Address</label>
+              <input
+                id="email"
+                type="email"
+                className="admin-login-input"
+                placeholder="admin@umpcferi.ac.za"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                disabled={loading}
+              />
+            </div>
+            
+            <div className="admin-login-form-group">
+              <label htmlFor="password">Password</label>
+              <input
+                id="password"
+                type="password"
+                className="admin-login-input"
+                placeholder="••••••••"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                disabled={loading}
+              />
+            </div>
+            
+            <button 
+              type="submit" 
+              className="admin-login-button"
               disabled={loading}
-            />
-          </div>
+            >
+              {loading ? (
+                <span className="admin-login-loading">
+                  <span className="admin-login-spinner"></span>
+                  Logging in...
+                </span>
+              ) : (
+                'Login'
+              )}
+            </button>
+          </form>
           
-          <button 
-            type="submit" 
-            className="admin-login-button"
-            disabled={loading}
-          >
-            {loading ? 'Logging in...' : 'Login'}
-          </button>
-        </form>
-        
-        <div className="admin-login-footer">
-          <p>Default credentials: admin@umpcferi.ac.za / admin123</p>
+          <div className="admin-login-footer">
+            <p>Default: <strong>admin@umpcferi.ac.za</strong> / <strong>admin123</strong></p>
+          </div>
         </div>
       </div>
     </div>
