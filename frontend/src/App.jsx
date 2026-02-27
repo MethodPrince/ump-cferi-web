@@ -14,6 +14,7 @@ import Messages from './admin/Messages';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import ChatWidget from './components/ChatWidget';
+import Newsletter from './pages/Newsletter';
 import './styles/ump-theme.css';
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
         <Route path="/impact" element={<Impact />} />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
+      <Route path="/newsletter" element={<Newsletter />} />
         
         {/* Admin Routes */}
         <Route path="/admin/login" element={
