@@ -6,6 +6,58 @@ import '../styles/home.css';
 const Home = () => {
   const [businesses, setBusinesses] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  // Array of background images for slideshow
+  const slides = [
+    {
+      image: '/slideshow/Cferi 04.jpg',
+      caption: 'Be Limitless - Ntseka Mahale',
+      title: 'Entrepreneurship Tips'
+    },
+    {
+      image: '/slideshow/Dr. sneakers Pop up.jpg',
+      caption: 'Dr. Sneakers - Professional Shoe Care',
+      title: 'Shoe Restoration Services'
+    },
+    {
+      image: '/slideshow/Cferi 09.jpg',
+      caption: 'CFERI Entrepreneurship Development',
+      title: 'Program Highlights'
+    },
+    {
+      image: '/slideshow/UMP 2023 Staff W shop Entrepreneurship oct-34.jpg',
+      caption: 'UMP Staff Entrepreneurship Workshop 2023',
+      title: 'Staff Development'
+    },
+    {
+      image: '/slideshow/Visit BYMF.jpg',
+      caption: 'Centre for Entrepreneurship & Rapid Incubator',
+      title: 'UMPCFERI'
+    }
+  ];
+
+  // Automatic slideshow
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 5000); // Change slide every 5 seconds
+
+    return () => clearInterval(timer);
+  }, [slides.length]);
+
+  // Manual navigation functions
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
+  };
 
   useEffect(() => {
     getBusinesses()
@@ -25,14 +77,59 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      {/* Hero Section */}
+      {/* Hero Section with Slideshow Background */}
       <section className="hero-section">
+        {/* Slideshow Background Images */}
+        <div className="slideshow-container">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`slide ${index === currentSlide ? 'active' : ''}`}
+            >
+              <img 
+                src={slide.image}
+                alt={slide.caption}
+                className="slide-image"
+                loading="lazy"
+                onError={(e) => {
+                  console.error('Image failed to load:', slide.image);
+                  e.target.style.backgroundColor = '#333';
+                }}
+              />
+              <div className="slide-overlay"></div>
+            </div>
+          ))}
+        </div>
+
+        {/* Slide Caption */}
+        <div className="slide-caption">
+          <span className="caption-title">{slides[currentSlide].title}</span>
+          <span className="caption-text">{slides[currentSlide].caption}</span>
+        </div>
+
+        {/* Navigation Arrows */}
+        <button className="slide-nav prev" onClick={prevSlide} aria-label="Previous slide">❮</button>
+        <button className="slide-nav next" onClick={nextSlide} aria-label="Next slide">❯</button>
+
+        {/* Slide Indicators */}
+        <div className="slide-indicators">
+          {slides.map((_, index) => (
+            <button
+              key={index}
+              className={`indicator ${index === currentSlide ? 'active' : ''}`}
+              onClick={() => goToSlide(index)}
+              aria-label={`Go to slide ${index + 1}`}
+            />
+          ))}
+        </div>
+
+        {/* Hero Content Overlay */}
         <div className="container">
           <div className="hero-content fade-in">
-            <h1 className="hero-title">UMP CFERI</h1>
+            <h1 className="hero-title">UMPCFERI</h1>
             <p className="hero-tagline">Creating Opportunities</p>
             <p className="hero-subtitle">
-              Centre for Entrepreneurship and Rapid Incubation
+              Centre for Entrepreneurship and Rapid Incubator
             </p>
             <div className="hero-buttons">
               <Link to="/about" className="btn btn-primary">Learn More</Link>
@@ -52,9 +149,9 @@ const Home = () => {
           </div>
           <div className="mission-content">
             <p className="mission-text">
-              To offer high quality educational and training opportunities that foster the holistic 
-              development of students through teaching and learning, research and scholarship, and 
-              engagement, in collaboration with strategic partners.
+              To foster a dynamic entrepreneurship ecosystem through development programmes,
+              strategic partnerships, and applied research aimed at building sustainable enterprises
+              and contributing to local, national and regional economic growth.
             </p>
           </div>
         </div>

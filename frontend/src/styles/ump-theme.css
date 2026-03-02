@@ -6,9 +6,21 @@
   --ump-navy-light: #2f3370;
   --ump-navy-dark: #1a1c3d;
   
-  /* UMP Gold - Accent Color */
+  /* UMP Gold - Original Accent Color */
   --ump-gold: #ffd700;
   --ump-gold-rgb: 255, 215, 0;
+  
+  /* UMP Green - Accent Color */
+  --ump-green: #2A9D8F;
+  --ump-green-rgb: 42, 157, 143;
+  
+  /* UMP Red - Accent Color */
+  --ump-red: #E63946;
+  --ump-red-rgb: 230, 57, 70;
+  
+  /* Secondary Yellow */
+  --ump-yellow: #FFD60A;
+  --ump-yellow-rgb: 255, 214, 10;
   
   /* Neutral Colors */
   --ump-white: #ffffff;

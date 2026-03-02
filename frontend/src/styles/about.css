@@ -207,6 +207,93 @@
   }
 }
 
+/* Goals and Objectives Section */
+.goals-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.goal-card {
+  background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+  padding: 2rem;
+  border-left: 4px solid var(--ump-gold);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.goal-card:nth-child(1) {
+  border-left-color: var(--ump-red);
+}
+
+.goal-card:nth-child(2) {
+  border-left-color: var(--ump-green);
+}
+
+.goal-card:nth-child(3) {
+  border-left-color: var(--ump-yellow);
+}
+
+.goal-card:nth-child(4) {
+  border-left-color: var(--ump-gold);
+}
+
+.goal-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.goal-title {
+  color: var(--ump-navy);
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.goal-card:nth-child(1) .goal-title {
+  color: var(--ump-red);
+}
+
+.goal-card:nth-child(2) .goal-title {
+  color: var(--ump-green);
+}
+
+.goal-card:nth-child(3) .goal-title {
+  color: var(--ump-yellow);
+}
+
+.goal-card:nth-child(4) .goal-title {
+  color: var(--ump-gold);
+}
+
+.goal-objectives {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.goal-objectives li {
+  color: var(--ump-black);
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.goal-objectives li:before {
+  content: "▸";
+  color: var(--ump-gold);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
 @media (max-width: 480px) {
   .journey-grid {
     grid-template-columns: 1fr;
@@ -217,6 +304,10 @@
   }
   
   .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .goals-grid {
     grid-template-columns: 1fr;
   }
 }

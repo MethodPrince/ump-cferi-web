@@ -8,6 +8,7 @@ const ChatWidget = () => {
   const [newMessage, setNewMessage] = useState('');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [studentNumber, setStudentNumber] = useState(''); // optional field
   const [showForm, setShowForm] = useState(true);
 
   useEffect(() => {
@@ -31,7 +32,8 @@ const ChatWidget = () => {
       senderName: name || 'Anonymous',
       senderEmail: email || 'anonymous@example.com',
       message: newMessage,
-      status: 'unanswered'
+      status: 'unanswered',
+      ...(studentNumber ? { studentNumber } : {})
     };
 
     try {
@@ -60,7 +62,12 @@ const ChatWidget = () => {
           <div className="chat-messages">
             {messages.map((msg, i) => (
               <div key={i} className={msg.isUser ? 'chat-message-user' : 'chat-message-admin'}>
-                <div className="chat-message-sender">{msg.senderName}</div>
+                <div className="chat-message-sender">
+                  {msg.senderName}
+                  {msg.studentNumber && (
+                    <span className="chat-student-number"> • {msg.studentNumber}</span>
+                  )}
+                </div>
                 <div className="chat-message-text">{msg.message}</div>
               </div>
             ))}
@@ -81,6 +88,13 @@ const ChatWidget = () => {
                 placeholder="Your email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                type="text"
+                className="chat-input"
+                placeholder="Student number (optional)"
+                value={studentNumber}
+                onChange={(e) => setStudentNumber(e.target.value)}
               />
             </div>
           )}
