@@ -15,6 +15,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ChatWidget from './components/ChatWidget';
 import Newsletter from './pages/Newsletter';
+import Programs from './pages/Programs';
 import './styles/ump-theme.css';
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
       <Route path="/newsletter" element={<Newsletter />} />
+      <Route path="/programs" element={<Programs />} />
         
         {/* Admin Routes */}
         <Route path="/admin/login" element={

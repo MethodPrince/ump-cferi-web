@@ -43,7 +43,7 @@ const Header = ({ admin }) => {
       <div className="header-container">
         <Link to="/" className="logo-container">
           <img src="/images/ump-logo.jpg" alt="UMP Logo" className="ump-logo" />
-          <span className="logo-text">UMP CFERI</span>
+          <span className="logo-text">UMPCFERI</span>
         </Link>
         <div className="nav-links">
           <Link to="/" className="nav-link">Home</Link>
@@ -52,6 +52,7 @@ const Header = ({ admin }) => {
           <Link to="/events" className="nav-link">Events</Link>
           <Link to="/contact" className="nav-link">Contact</Link>
           <Link to="/newsletter" className="nav-link">Newsletter</Link>
+          <Link to="/programs" className="nav-link">Programs</Link>
         </div>
       </div>
     </nav>
