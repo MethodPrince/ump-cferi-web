@@ -7,6 +7,7 @@
   animation: fadeIn 0.8s ease-out;
 }
 
+/* ===== TITLE STYLES ===== */
 .about-title {
   color: var(--ump-navy);
   margin-bottom: 1.5rem;
@@ -38,7 +39,7 @@
   font-family: Arial, sans-serif;
 }
 
-/* Mission, Vision, Values Cards */
+/* ===== MISSION, VISION, VALUES CARDS ===== */
 .about-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -72,142 +73,26 @@
 .about-list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .about-list-item {
   margin-bottom: 0.5rem;
   color: var(--ump-black);
   font-family: Arial, sans-serif;
+  animation: slideIn 0.3s ease-out;
+  animation-fill-mode: both;
 }
 
-/* ===== SQUARE JOURNEY CARDS - NEW ADDITION ===== */
-.journey-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
+.about-list-item:nth-child(1) { animation-delay: 0.1s; }
+.about-list-item:nth-child(2) { animation-delay: 0.2s; }
+.about-list-item:nth-child(3) { animation-delay: 0.3s; }
+.about-list-item:nth-child(4) { animation-delay: 0.4s; }
+.about-list-item:nth-child(5) { animation-delay: 0.5s; }
+.about-list-item:nth-child(6) { animation-delay: 0.6s; }
+.about-list-item:nth-child(7) { animation-delay: 0.7s; }
 
-.journey-card {
-  aspect-ratio: 1 / 1; /* Makes the card square */
-  background: linear-gradient(135deg, var(--ump-navy) 0%, var(--ump-navy-light) 100%);
-  border-radius: 12px;
-  padding: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(36, 39, 83, 0.2);
-  border: 2px solid transparent;
-}
-
-.journey-card:hover {
-  transform: translateY(-5px);
-  border-color: var(--ump-gold);
-  box-shadow: 0 12px 30px rgba(36, 39, 83, 0.3);
-}
-
-.journey-content {
-  width: 100%;
-}
-
-.journey-year {
-  font-family: 'Brandon Grotesque', Arial, sans-serif;
-  font-size: 2.2rem;
-  font-weight: bold;
-  color: var(--ump-gold);
-  margin-bottom: 0.5rem;
-  line-height: 1.2;
-}
-
-.journey-message {
-  font-family: Arial, sans-serif;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  opacity: 0.95;
-}
-
-/* Original Timeline Styles (kept for reference) */
-.about-timeline {
-  position: relative;
-  padding: 1rem 0;
-}
-
-.about-timeline-item {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  border-left: 3px solid var(--ump-gold);
-  background: var(--ump-gray-light);
-  border-radius: 0 8px 8px 0;
-  transition: all 0.3s;
-}
-
-.about-timeline-item:hover {
-  border-left-width: 5px;
-  background: var(--ump-white);
-  box-shadow: 0 2px 8px rgba(36, 39, 83, 0.1);
-}
-
-.about-timeline-year {
-  color: var(--ump-navy);
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-family: 'Brandon Grotesque', Arial, sans-serif;
-}
-
-/* Key Facts Cards */
-.about-stat-number {
-  color: var(--ump-navy);
-  font-size: 2rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  font-family: 'Brandon Grotesque', Arial, sans-serif;
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .about-title {
-    font-size: 1.8rem;
-  }
-  
-  .about-section h2 {
-    font-size: 1.5rem;
-  }
-  
-  .about-description {
-    font-size: 1rem;
-  }
-  
-  /* Journey cards responsive */
-  .journey-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-  
-  .journey-year {
-    font-size: 1.8rem;
-  }
-  
-  .journey-message {
-    font-size: 0.85rem;
-  }
-}
-
-/* Goals and Objectives Section */
+/* ===== GOALS AND OBJECTIVES SECTION ===== */
 .goals-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -222,23 +107,14 @@
   border-radius: 4px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  animation: slideUp 0.5s ease-out;
+  animation-fill-mode: both;
 }
 
-.goal-card:nth-child(1) {
-  border-left-color: var(--ump-red);
-}
-
-.goal-card:nth-child(2) {
-  border-left-color: var(--ump-green);
-}
-
-.goal-card:nth-child(3) {
-  border-left-color: var(--ump-yellow);
-}
-
-.goal-card:nth-child(4) {
-  border-left-color: var(--ump-gold);
-}
+.goal-card:nth-child(1) { animation-delay: 0.1s; border-left-color: #e31b23; }
+.goal-card:nth-child(2) { animation-delay: 0.2s; border-left-color: #28a745; }
+.goal-card:nth-child(3) { animation-delay: 0.3s; border-left-color: #ffc107; }
+.goal-card:nth-child(4) { animation-delay: 0.4s; border-left-color: var(--ump-gold); }
 
 .goal-card:hover {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
@@ -255,21 +131,10 @@
   letter-spacing: 0.5px;
 }
 
-.goal-card:nth-child(1) .goal-title {
-  color: var(--ump-red);
-}
-
-.goal-card:nth-child(2) .goal-title {
-  color: var(--ump-green);
-}
-
-.goal-card:nth-child(3) .goal-title {
-  color: var(--ump-yellow);
-}
-
-.goal-card:nth-child(4) .goal-title {
-  color: var(--ump-gold);
-}
+.goal-card:nth-child(1) .goal-title { color: #e31b23; }
+.goal-card:nth-child(2) .goal-title { color: #28a745; }
+.goal-card:nth-child(3) .goal-title { color: #ffc107; }
+.goal-card:nth-child(4) .goal-title { color: var(--ump-gold); }
 
 .goal-objectives {
   list-style: none;
@@ -284,7 +149,13 @@
   position: relative;
   line-height: 1.6;
   font-size: 0.95rem;
+  animation: slideIn 0.3s ease-out;
+  animation-fill-mode: both;
 }
+
+.goal-objectives li:nth-child(1) { animation-delay: 0.2s; }
+.goal-objectives li:nth-child(2) { animation-delay: 0.3s; }
+.goal-objectives li:nth-child(3) { animation-delay: 0.4s; }
 
 .goal-objectives li:before {
   content: "▸";
@@ -294,13 +165,222 @@
   left: 0;
 }
 
+/* ===== SQUARE JOURNEY CARDS ===== */
+.journey-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.journey-card {
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(135deg, var(--ump-navy) 0%, var(--ump-navy-light) 100%);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(36, 39, 83, 0.2);
+  border: 2px solid transparent;
+  animation: scaleIn 0.5s ease-out;
+  animation-fill-mode: both;
+  position: relative;
+  overflow: hidden;
+}
+
+.journey-card:nth-child(1) { animation-delay: 0.1s; }
+.journey-card:nth-child(2) { animation-delay: 0.2s; }
+.journey-card:nth-child(3) { animation-delay: 0.3s; }
+.journey-card:nth-child(4) { animation-delay: 0.4s; }
+.journey-card:nth-child(5) { animation-delay: 0.5s; }
+.journey-card:nth-child(6) { animation-delay: 0.6s; }
+
+.journey-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  border-color: var(--ump-gold);
+  box-shadow: 0 12px 30px rgba(36, 39, 83, 0.3);
+}
+
+.journey-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll; /* Makes it scrollable */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in IE/Edge */
+  padding-right: 5px; /* Prevents text cutoff */
+}
+
+/* Hide scrollbar in Chrome/Safari/Opera */
+.journey-content::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  background: transparent;
+}
+
+.journey-year {
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--ump-gold);
+  margin-bottom: 0.8rem;
+  line-height: 1.2;
+  border-bottom: 2px solid rgba(255, 215, 0, 0.3);
+  padding-bottom: 0.5rem;
+  flex-shrink: 0;
+}
+
+.journey-message {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  white-space: pre-line;
+  flex: 1;
+  overflow-y: visible;
+  animation: fadeInText 0.8s ease-out;
+}
+
+/* ===== KEY FACTS CARDS ===== */
+.about-stat-number {
+  color: var(--ump-navy);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  animation: pulse 2s infinite;
+}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Hover animations for cards */
+.about-card, .goal-card, .journey-card {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Stagger animation for grid items */
+.about-grid .about-card {
+  animation: slideUp 0.5s ease-out;
+  animation-fill-mode: both;
+}
+
+.about-grid .about-card:nth-child(1) { animation-delay: 0.1s; }
+.about-grid .about-card:nth-child(2) { animation-delay: 0.2s; }
+.about-grid .about-card:nth-child(3) { animation-delay: 0.3s; }
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+  
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+  
+  .about-description {
+    font-size: 1rem;
+  }
+  
+  .journey-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .journey-year {
+    font-size: 1.5rem;
+  }
+  
+  .journey-message {
+    font-size: 0.8rem;
+  }
+  
+  .goals-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .goal-card {
+    animation: slideIn 0.5s ease-out;
+  }
+}
+
 @media (max-width: 480px) {
   .journey-grid {
     grid-template-columns: 1fr;
   }
   
   .journey-card {
-    aspect-ratio: 2 / 1; /* Slightly rectangular on mobile for better text display */
+    aspect-ratio: auto;
+    min-height: 200px;
   }
   
   .about-grid {
@@ -309,5 +389,49 @@
 
   .goals-grid {
     grid-template-columns: 1fr;
+  }
+  
+  .goal-card {
+    padding: 1.5rem;
+  }
+  
+  .goal-title {
+    font-size: 1rem;
+  }
+  
+  .goal-objectives li {
+    font-size: 0.85rem;
+  }
+}
+
+/* ===== PRINT STYLES ===== */
+@media print {
+  .about-card:hover,
+  .goal-card:hover,
+  .journey-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .journey-card {
+    break-inside: avoid;
+  }
+  
+  .about-stat-number {
+    animation: none;
+  }
+}
+
+/* ===== CUSTOM SCROLLBEHAVIOR FOR WHOLE PAGE ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth reveal animations on scroll */
+@media (prefers-reduced-motion: no-preference) {
+  .about-section {
+    animation: fadeIn 0.8s ease-out;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
   }
 }

@@ -15,11 +15,7 @@ const Home = () => {
       caption: 'Be Limitless - Ntseka Mahale',
       title: 'Entrepreneurship Tips'
     },
-    {
-      image: '/slideshow/Dr. sneakers Pop up.jpg',
-      caption: 'Dr. Sneakers - Professional Shoe Care',
-      title: 'Shoe Restoration Services'
-    },
+   
     {
       image: '/slideshow/Cferi 09.jpg',
       caption: 'CFERI Entrepreneurship Development',
@@ -34,6 +30,26 @@ const Home = () => {
       image: '/slideshow/Visit BYMF.jpg',
       caption: 'Centre for Entrepreneurship & Rapid Incubator',
       title: 'UMPCFERI'
+    },
+    {
+      image: '/slideshow/DSC_5377.jpg',
+      caption: 'Entrepreneurship Excellence',
+      title: 'Innovation & Growth'
+    },
+    {
+      image: '/slideshow/DSC_5385.jpg',
+      caption: 'Business Development Initiatives',
+      title: 'Empowering Entrepreneurs'
+    },
+    {
+      image: '/slideshow/DSC_5388.jpg',
+      caption: 'Student Entrepreneurship Programs',
+      title: 'Building Future Leaders'
+    },
+    {
+      image: '/slideshow/DSC_5391.jpg',
+      caption: 'Community Impact & Success',
+      title: 'Sustainable Development'
     }
   ];
 

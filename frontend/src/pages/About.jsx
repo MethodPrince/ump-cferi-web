@@ -1,27 +1,31 @@
 import '../styles/about.css';
 
 const About = () => {
-  // Journey data with years and messages
+  // Journey data with exact words from the document
   const journeyData = [
     {
       year: '2020',
-      message: 'CFERI established with initial incubation program'
+      message: '• INCEPTION OF UMPCFERI INFRASTRUCTURAL DEVELOPMENT.\n• UMP PARTICIPATED VIRTUALLY IN EDHE NATIONAL ROUNDS DURING LOCKDOWN.'
     },
     {
       year: '2021',
-      message: 'First cohort of 10 student businesses incubated'
+      message: '• CONTINUED PARTNERSHIP/MOA WITH SEDFA.\n• STUDENTPRENEUR ADVANCED TO EDHE NATIONAL FINALS.\n• CENTRE ACQUIRED STATE-OF-THE-ART EQUIPMENT AND INFRASTRUCTURE FOR SHARED WORKING SPACES AND THE ENTREPRENEURSHIP HUB.'
     },
     {
       year: '2022',
-      message: 'Expanded to mentorship network and partnerships'
+      message: '• UMPCFERI WON THE BEST PITCH AWARD AT UNIFIC SUMMIT (MALAYSIA).\n• MOA SIGNED WITH 11 ASIAN UNIVERSITIES CONSORTIUM.\n• 6 STUDENTPRENEURS COMPETED IN THE EDHE REGIONAL ROUNDS AND 3 ADVANCED TO THE NATIONAL ROUNDS.'
     },
     {
       year: '2023',
-      message: '50+ businesses supported, 100+ jobs created'
+      message: '• GRAND OPENING OF UMPCFERI, INCLUDING ENTREPRENEURSHIP EXHIBITION.\n• HOSTED EDHE REGIONAL ROUNDS WITH 3 OTHER UNIVERSITIES.[3 WINNERS]\n• HOSTED POP-UP MARKET (CBD, PARTNERSHIP WITH SEDFA).\n• LAUNCHED UMP SWEEP CHAPTER WITH STANDARD BANK, OLD MUTUAL, ETC.\n• UMP STUDENTPRENEURS WON BRAND FUSION SA PITCH TOUR (TOP 3 PRIZES IN MPUMALANGA).\n• 2 STUDENTPRENEURS REPRESENTED MPUMALANGA AT THE CAPE TOWN INNOVATION SUMMIT (FUNDED BY TIA, MLAB, AND SET UP A START-UP).'
     },
     {
       year: '2024',
-      message: 'Digital platform launch and expanded programs'
+      message: '• UMPCFERI TEAM WON 1ST PLACE IN THE PHILIPPINES (UNIC HEALTH & WELLNESS IDEATHON) WITH THE MANGO AGROPROCESSING PROJECT.\n• HOSTED THE 1ST UMP ENTREPRENEURSHIP SUMMIT. • HOSTED THE 1ST WOMEN IN LEADERSHIP CONFERENCE (SWEEP).\n• 1ST CONTRACT FROM THE GOVERNMENT DEPARTMENT DEDT TO DEVELOP MPUMALANGA INFORMAL SECTOR POLICY.\n• SIGNED MOU WITH TUT; RENEWED MOU WITH SEDA (FUNDING).\n• CO-AUTHORED 2 BOOKS ON UNIVERSITY-LED ENTREPRENEURSHIP.\n• SECURED EDHE EAO AND UCDP FUNDING.'
+    },
+    {
+      year: '2025',
+      message: '• HOSTED AFRICA-ASIA ROUNDTABLE EVENT WITH MORE THAN 90 DELEGATES FROM MORE THAN 11 COUNTRIES.\n• ENTREPRENEURSHIP BOOTCAMP (SKILLS + INCUBATION PIPELINE).\n• SWEEP BRANDING MASTERCLASS.\n• EDHE-FULBRIGHT WORKSHOP ON EMBEDDING ENTREPRENEURSHIP INTO THE CURRICULUM.\n• STANDARD BANK PITCHING MASTERCLASS.\n• UMPCFERI STUDENTPRENEUR WINS 1ST PLACE AT THE ABSA/YAEI 2025 COMPETITION.\n• UMPCFERI STAKEHOLDER ENGAGEMENT.\n• CFERI WINS ENGAGEMENT TEAM EXCELLENCE AWARDS.'
     }
   ];
 
@@ -44,8 +48,6 @@ const About = () => {
           <p>To foster a dynamic entrepreneurship ecosystem through development programmes, 
              strategic partnerships, and applied research aimed at building sustainable enterprises
              and contributing to local, national and regional economic growth.
-
-
           </p>
         </div>
         <div className="about-card">
@@ -64,12 +66,6 @@ const About = () => {
             <li className="about-list-item">✓ Diversity</li>
             <li className="about-list-item">✓ Adaptability</li>
             <li className="about-list-item">✓ Relevance</li>
-          
-
-
-    
-            
-            
           </ul>
         </div>
       </div>
@@ -85,7 +81,7 @@ const About = () => {
             </ul>
           </div>
           <div className="goal-card">
-            <h3 className="goal-title">Goal 2:To identify, nurture and support entrepreneurial talent and innovation.</h3>
+            <h3 className="goal-title">Goal 2: To identify, nurture and support entrepreneurial talent and innovation.</h3>
             <ul className="goal-objectives">
               <li>To identify and enable students with business ideas into entrepreneurs.</li>
               <li>To promote entrepreneurship and creative problem solving in staff and students.</li>
@@ -93,7 +89,7 @@ const About = () => {
             </ul>
           </div>
           <div className="goal-card">
-            <h3 className="goal-title">Goal 3:  To establish and maintain strategic partnerships, locally, nationally and internationally.</h3>
+            <h3 className="goal-title">Goal 3: To establish and maintain strategic partnerships, locally, nationally and internationally.</h3>
             <ul className="goal-objectives">
               <li>To facilitate strategic relationships through collaborations, networks, linkages and partnerships.</li>
               <li>To leverage resources through our partnerships.</li>
@@ -109,9 +105,9 @@ const About = () => {
         </div>
       </div>
 
-      {/* ONLY THIS SECTION CHANGED - NOW SQUARE CARDS */}
+      {/* Journey Section with Square Cards */}
       <div className="about-section">
-        <h2 className="about-title">Our Journey</h2>
+        <h2 className="about-title">CFERI'S KEY ACHIEVEMENTS</h2>
         <div className="journey-grid">
           {journeyData.map((item, index) => (
             <div key={index} className="journey-card">

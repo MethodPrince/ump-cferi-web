@@ -80,6 +80,47 @@ const Footer = () => {
         </div>
       </div>
 
+      {/* Sponsors Carousel Section */}
+      <div className="sponsors-section">
+        <div className="sponsors-container">
+          <div className="sponsors-carousel">
+            <div className="sponsors-track">
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/0e090f32-2706-4175-b054-469b2fceaa67.jpeg" alt="Sponsor 1" />
+              </div>
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/2024cffd-85a1-4da4-a265-af4b22ee1005.jpeg" alt="Sponsor 2" />
+              </div>
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/8f0645f6-ab81-470c-9599-048f164def1f.jpeg" alt="Sponsor 3" />
+              </div>
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/afad9013-9a2a-41b4-85af-19a166992843.jpeg" alt="Sponsor 4" />
+              </div>
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/f08c823c-6faa-4519-8b9b-b63336d3e7c1.jpeg" alt="Sponsor 5" />
+              </div>
+              {/* Duplicate for seamless loop */}
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/0e090f32-2706-4175-b054-469b2fceaa67.jpeg" alt="Sponsor 1" />
+              </div>
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/2024cffd-85a1-4da4-a265-af4b22ee1005.jpeg" alt="Sponsor 2" />
+              </div>
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/8f0645f6-ab81-470c-9599-048f164def1f.jpeg" alt="Sponsor 3" />
+              </div>
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/afad9013-9a2a-41b4-85af-19a166992843.jpeg" alt="Sponsor 4" />
+              </div>
+              <div className="sponsor-item">
+                <img src="/sponsorsImages/f08c823c-6faa-4519-8b9b-b63336d3e7c1.jpeg" alt="Sponsor 5" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Bottom Bar */}
       <div className="footer-bottom">
         <p>&copy; {currentYear} UMPCFERI. All rights reserved.</p>

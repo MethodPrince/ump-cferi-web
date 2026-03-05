@@ -136,6 +136,12 @@
   font-size: 2rem;
 }
 
+.program-icon-img {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+}
+
 .program-category {
   font-size: 0.75rem;
   text-transform: uppercase;
