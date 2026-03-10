@@ -1,11 +1,8 @@
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { getBusinesses } from '../services/api';
 import '../styles/home.css';
 
 const Home = () => {
-  const [businesses, setBusinesses] = useState([]);
-  const [loading, setLoading] = useState(true);
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Array of background images for slideshow
@@ -15,11 +12,30 @@ const Home = () => {
       caption: 'Be Limitless - Ntseka Mahale',
       title: 'Entrepreneurship Tips'
     },
-   
     {
       image: '/slideshow/Cferi 09.jpg',
       caption: 'CFERI Entrepreneurship Development',
       title: 'Program Highlights'
+    },
+    {
+      image: '/slideshow/DSC_5377.jpg',
+      caption: 'DSC 5377',
+      title: 'Event Snapshot'
+    },
+    {
+      image: '/slideshow/DSC_5385.jpg',
+      caption: 'DSC 5385',
+      title: 'Event Snapshot'
+    },
+    {
+      image: '/slideshow/DSC_5388.jpg',
+      caption: 'DSC 5388',
+      title: 'Event Snapshot'
+    },
+    {
+      image: '/slideshow/DSC_5391.jpg',
+      caption: 'DSC 5391',
+      title: 'Event Snapshot'
     },
     {
       image: '/slideshow/UMP 2023 Staff W shop Entrepreneurship oct-34.jpg',
@@ -30,26 +46,6 @@ const Home = () => {
       image: '/slideshow/Visit BYMF.jpg',
       caption: 'Centre for Entrepreneurship & Rapid Incubator',
       title: 'UMPCFERI'
-    },
-    {
-      image: '/slideshow/DSC_5377.jpg',
-      caption: 'Entrepreneurship Excellence',
-      title: 'Innovation & Growth'
-    },
-    {
-      image: '/slideshow/DSC_5385.jpg',
-      caption: 'Business Development Initiatives',
-      title: 'Empowering Entrepreneurs'
-    },
-    {
-      image: '/slideshow/DSC_5388.jpg',
-      caption: 'Student Entrepreneurship Programs',
-      title: 'Building Future Leaders'
-    },
-    {
-      image: '/slideshow/DSC_5391.jpg',
-      caption: 'Community Impact & Success',
-      title: 'Sustainable Development'
     }
   ];
 
@@ -57,15 +53,9 @@ const Home = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 5000); // Change slide every 5 seconds
-
+    }, 5000);
     return () => clearInterval(timer);
   }, [slides.length]);
-
-  // Manual navigation functions
-  const goToSlide = (index) => {
-    setCurrentSlide(index);
-  };
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % slides.length);
@@ -75,74 +65,61 @@ const Home = () => {
     setCurrentSlide((prev) => (prev - 1 + slides.length) % slides.length);
   };
 
-  useEffect(() => {
-    getBusinesses()
-      .then(({ data }) => setBusinesses(data))
-      .finally(() => setLoading(false));
-  }, []);
-
-  const totalJobs = businesses.reduce((sum, b) => sum + (b.jobsCreated || 0), 0);
-  const industries = new Set(businesses.map(b => b.industry)).size;
-
-  const stats = [
-    { number: businesses.length || '0', label: 'Businesses Supported' },
-    { number: totalJobs || '0', label: 'Jobs Created' },
-    { number: industries || '0', label: 'Industry Sectors' },
-    { number: '20+', label: 'Active Mentors' }
+  // Head programs data (clickable cards) - ONLY 3 CARDS
+  const headPrograms = [
+    {
+      id: 'incubation',
+      title: 'Incubation Programs',
+      icon: '🚀',
+      color: '#242753',
+      description: 'Renting Facilities, Industry Development, Business Plan, Record Keeping & Accounting, Coaching on Market Strategy',
+      sectionId: 'incubation-programs'
+    },
+    {
+      id: 'funding',
+      title: 'Enterpreneurship Development Programs',
+      icon: '🏆',
+      color: '#e31b23',
+      description: 'EDHE Competition, Student Indaba, Staff Entrepreneurship Capacity Building, CFERI Student Chapters',
+      sectionId: 'funding-competitions'
+    },
+    {
+      id: 'research',
+      title: 'Research Activities',
+      icon: '📚',
+      color: '#9c27b0',
+      description: 'Research on Entrepreneurship Development, Consultancy, UNICEF, Publications',
+      sectionId: 'research-activities'
+    }
   ];
 
   return (
     <div className="home-page">
-      {/* Hero Section with Slideshow Background */}
+      {/* Hero Section with Slideshow */}
       <section className="hero-section">
-        {/* Slideshow Background Images */}
         <div className="slideshow-container">
           {slides.map((slide, index) => (
             <div
               key={index}
               className={`slide ${index === currentSlide ? 'active' : ''}`}
+              style={{ backgroundImage: `url('${slide.image}')` }}
             >
-              <img 
-                src={slide.image}
-                alt={slide.caption}
-                className="slide-image"
-                loading="lazy"
-                onError={(e) => {
-                  console.error('Image failed to load:', slide.image);
-                  e.target.style.backgroundColor = '#333';
-                }}
-              />
               <div className="slide-overlay"></div>
+              {/* caption shown at bottom of slide */}
+              <div className="slide-content">
+                <h2 className="slide-title">{slide.title}</h2>
+                <p className="slide-caption">{slide.caption}</p>
+              </div>
             </div>
           ))}
         </div>
 
-        {/* Slide Caption */}
-        <div className="slide-caption">
-          <span className="caption-title">{slides[currentSlide].title}</span>
-          <span className="caption-text">{slides[currentSlide].caption}</span>
-        </div>
-
-        {/* Navigation Arrows */}
         <button className="slide-nav prev" onClick={prevSlide} aria-label="Previous slide">❮</button>
         <button className="slide-nav next" onClick={nextSlide} aria-label="Next slide">❯</button>
 
-        {/* Slide Indicators */}
-        <div className="slide-indicators">
-          {slides.map((_, index) => (
-            <button
-              key={index}
-              className={`indicator ${index === currentSlide ? 'active' : ''}`}
-              onClick={() => goToSlide(index)}
-              aria-label={`Go to slide ${index + 1}`}
-            />
-          ))}
-        </div>
-
-        {/* Hero Content Overlay */}
         <div className="container">
           <div className="hero-content fade-in">
-            <h1 className="hero-title">UMPCFERI</h1>
+            <h1 className="hero-title">UMP CFERI</h1>
             <p className="hero-tagline">Creating Opportunities</p>
             <p className="hero-subtitle">
               Centre for Entrepreneurship and Rapid Incubator
@@ -156,85 +133,74 @@ const Home = () => {
         <div className="hero-overlay"></div>
       </section>
 
-      {/* Mission Section */}
-      <section className="mission-section slide-up">
+      {/* Head Programs Section - 3 Clickable Cards */}
+      <section className="head-programs-section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Our Mission</h2>
+            <h2 className="section-title">Our Programs</h2>
             <div className="section-divider"></div>
-          </div>
-          <div className="mission-content">
-            <p className="mission-text">
-              To foster a dynamic entrepreneurship ecosystem through development programmes,
-              strategic partnerships, and applied research aimed at building sustainable enterprises
-              and contributing to local, national and regional economic growth.
+            <p className="section-subtitle">
+              Explore our comprehensive programs designed to nurture entrepreneurs at every stage
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* Stats Section */}
-      <section className="stats-section">
-        <div className="container">
-          <div className="stats-grid">
-            {stats.map((stat, index) => (
-              <div key={index} className="stat-card fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                <div className="stat-number">{stat.number}</div>
-                <div className="stat-label">{stat.label}</div>
-              </div>
+          <div className="head-programs-grid three-cards">
+            {headPrograms.map((program, index) => (
+              <Link 
+                to={`/programs#${program.sectionId}`} 
+                key={program.id}
+                className="head-program-card fade-in"
+                style={{ animationDelay: `${index * 0.15}s` }}
+              >
+                <div className="program-icon-wrapper" style={{ backgroundColor: program.color }}>
+                  <span className="program-icon">{program.icon}</span>
+                </div>
+                <h3>{program.title}</h3>
+                <p className="program-preview">{program.description}</p>
+                <span className="view-more">
+                  View Details <i className="fas fa-arrow-right"></i>
+                </span>
+              </Link>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Programs Section */}
-      <section className="programs-section slide-up">
+      {/* Why Choose Us Section */}
+      <section className="why-choose-section">
         <div className="container">
           <div className="section-header">
-            <h2 className="section-title">Our Programs</h2>
+            <h2 className="section-title">Why Choose UMP CFERI</h2>
             <div className="section-divider"></div>
           </div>
-          <div className="programs-grid">
-            <div className="program-card fade-in">
-              <h3>Entrepreneurship Development</h3>
-              <p>Comprehensive training and mentorship for aspiring student entrepreneurs.</p>
+          
+          <div className="features-grid">
+            <div className="feature-card fade-in">
+              <div className="feature-icon">🎓</div>
+              <h3>Expert Mentorship</h3>
+              <p>Learn from experienced entrepreneurs, industry experts, and business leaders who guide you every step of the way.</p>
             </div>
-            <div className="program-card fade-in" style={{ animationDelay: '0.1s' }}>
-              <h3>Business Incubation</h3>
-              <p>Structured support for early-stage startups with access to resources and funding.</p>
+            
+            <div className="feature-card fade-in" style={{ animationDelay: '0.1s' }}>
+              <div className="feature-icon">💰</div>
+              <h3>Funding Access</h3>
+              <p>Connect with funding opportunities, grants, and investors through our extensive network of partners.</p>
             </div>
-            <div className="program-card fade-in" style={{ animationDelay: '0.2s' }}>
-              <h3>Mentorship Network</h3>
-              <p>Connect with experienced business leaders and industry experts.</p>
+            
+            <div className="feature-card fade-in" style={{ animationDelay: '0.2s' }}>
+              <div className="feature-icon">🌍</div>
+              <h3>Global Network</h3>
+              <p>Join a community of entrepreneurs and gain exposure to international markets and opportunities.</p>
+            </div>
+            
+            <div className="feature-card fade-in" style={{ animationDelay: '0.3s' }}>
+              <div className="feature-icon">🏢</div>
+              <h3>State-of-the-Art Facilities</h3>
+              <p>Access our modern incubation hub with co-working spaces, meeting rooms, and specialized equipment.</p>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Featured Businesses */}
-      {!loading && businesses.length > 0 && (
-        <section className="featured-section">
-          <div className="container">
-            <div className="section-header">
-              <h2 className="section-title">Featured Businesses</h2>
-              <div className="section-divider"></div>
-            </div>
-            <div className="featured-grid">
-              {businesses.slice(0, 3).map((business, index) => (
-                <div key={business._id} className="featured-card fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-                  <h3>{business.name}</h3>
-                  <p className="business-owner">{business.owner}</p>
-                  <p className="business-industry">{business.industry}</p>
-                  <p className="business-description">{business.description}</p>
-                </div>
-              ))}
-            </div>
-            <div className="text-center">
-              <Link to="/impact" className="btn btn-secondary">View All Businesses</Link>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* CTA Section */}
       <section className="cta-section fade-in">
