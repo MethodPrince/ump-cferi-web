@@ -29,7 +29,7 @@ const Contact = () => {
       <div className="contact-content">
         <div className="contact-info">
           <h3>Get in Touch</h3>
-          <p><strong>Email:</strong> info@umpcferi.ac.za</p>
+          <p><strong>Email:</strong> cferi_bdo@ump.ac.za</p>
           <p><strong>Phone:</strong> +27 13 002 0000</p>
           <p><strong>Address:</strong> University of Mpumalanga, South Africa</p>
         </div>

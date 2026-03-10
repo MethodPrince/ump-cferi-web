@@ -89,16 +89,7 @@ const Programs = () => {
       color: '#e31b23',
       description: 'Opportunities to win funding and recognition for your ideas',
       programs: [
-        { 
-          id: 'edhe-competition',
-          name: 'EDHE Competition', 
-          description: 'Entrepreneurship Development in Higher Education competition.',
-          fullDetails: 'Annual competition that brings together student entrepreneurs from universities across South Africa. Pitch your business idea for a chance to win funding and recognition.',
-          benefits: ['Cash prizes', 'National recognition', 'Mentorship', 'Networking'],
-          prizes: ['1st Place: R100,000', '2nd Place: R50,000', '3rd Place: R25,000'],
-          contact: 'edhe@umpcferi.ac.za',
-          deadline: 'August 2025'
-        },
+       
         { 
           id: 'student-indaba',
           name: 'Student Indaba', 
@@ -115,6 +106,69 @@ const Programs = () => {
           fullDetails: 'Workshops and training sessions designed to help university staff develop entrepreneurial mindsets and skills, enabling them to better support student entrepreneurs.',
           benefits: ['Skill development', 'Mentor training', 'Curriculum integration', 'Research opportunities'],
           contact: 'staff@umpcferi.ac.za'
+        },
+        // NEW: EDHE Programme added here
+        { 
+          id: 'edhe-programme',
+          name: 'EDHE Programme', 
+          description: 'Entrepreneurship Development in Higher Education - National Platform',
+          fullDetails: `The EDHE Programme is people-focused. It is intended to develop the entrepreneurial capacity of students, academics and leaders. The intention is for students to be more successful in terms of becoming economically active during and after their tertiary education. Entrepreneurial activity during their studies could enable students to generate an additional income and fast-track the process of becoming economically active. Upon graduation, students would be able to consider entrepreneurship as a career, either as a first choice, or as an alternative, especially if they have difficulty in finding employment.`,
+          
+          fullDescription: `Background on the EDHE Programme
+
+Within the context of graduate and youth unemployment, the resources available at universities, the national drive for SMEs and the need for third-stream income at universities, the imperative to drive student and graduate entrepreneurship has been growing steadily. In response, a platform for Entrepreneurship Development in Higher Education (EDHE) was established at the end of 2016 from within the University Education Branch of the Department Higher Education and Training. The EDHE Programme has since been included in the University Capacity Development Programme (UCDP) of the Department Higher Education and Training.
+
+The goals of the EDHE Programme are:
+
+• Student entrepreneurship, i.e. mobilising the national student and graduate resource to create successful enterprises that will ultimately lead to both wealth and job creation.
+• Entrepreneurship development in academia, i.e. support academics in instilling an entrepreneurial mindset within all students and graduates through the offering of relevant knowledge, transferral of practical skills and the application of business principles, not only to a specific discipline, but across disciplines.
+• Developing entrepreneurial universities, i.e. creating a conducive environment that will enable universities to adapt strategically and embark on projects whereby third-stream income can be generated through innovative business ideas.
+
+The EDHE Programme is people-focused. It is intended to develop the entrepreneurial capacity of students, academics and leaders. The intention is for students to be more successful in terms of becoming economically active during and after their tertiary education. Entrepreneurial activity during their studies could enable students to generate an additional income and fast-track the process of becoming economically active. Upon graduation, students would be able to consider entrepreneurship as a career, either as a first choice, or as an alternative, especially if they have difficulty in finding employment.
+
+The people-focused nature of the EDHE Programme extends to developing the capacity of academics and support professionals to deliver informed and relevant services in terms of entrepreneurship education. This would include equipping academics across disciplines to encourage an entrepreneurial mindset and culture, as well as subject-specific entrepreneurship education, delivered with confidence.
+
+The EDHE Programme is positioned to make entrepreneurship education and training accessible for all students across disciplines. This is a much-needed intervention that would better equip students to successfully participate in the economy upon graduation, regardless of whether they are employed or not.
+
+The EDHE Programme, through driving entrepreneurship development in academia, is intended to optimise existing entrepreneurship research and encourage contextually relevant new research. This would include drawing together existing research on the broader topic of entrepreneurship development, but also specifically on the topic of entrepreneurial universities. Entrepreneurship research would be made available to university stakeholders, students and other stakeholders through a centralised online repository of information.
+
+The UCDP emphasises an increasing focus on curriculum development initiatives that examine new and alternative contents and pedagogies which are relevant to the South African context. In terms of driving the entrepreneurship development agenda through the curriculum, the EDHE Programme is aimed at embedding entrepreneurship in the curriculum, through flexible curriculum pathways, across disciplines. In the spirit of the UCDP, the intention is for entrepreneurship in the curriculum to be relevant to the local context in order to support the ability of graduates to participate meaningfully in society and in the world of work.
+
+In essence, student development, staff development and curriculum development are interlinked in terms of the EDHE Programme. High quality entrepreneurship programmes would benefit both staff and students. Better equipped and skilled staff would contribute to student entrepreneurship and more relevant academic programmes and research. Similarly, as students expand their entrepreneurship skillsets, staff would be motivated to invest in their own development and academic programmes.
+
+The EDHE Programme spans across institutional and regional boundaries. It is aimed at addressing entrepreneurship development needs at individual institutions, while drawing together regional resources and efforts to the benefit of stakeholders on a national level.
+
+This is a large and complex endeavour that requires multiple focus areas and much time. The good news is that most universities are already taking ownership of the problem and implementing initiatives. Add to this the fact that universities have access to their own resources, and it is clear that the main role the EDHE Programme is to provide strategic focus, create enabling environments, collaboration, partnering and unlocking what is existing.`,
+          
+          goals: [
+            'Student entrepreneurship: mobilising the national student and graduate resource to create successful enterprises that will ultimately lead to both wealth and job creation',
+            'Entrepreneurship development in academia: support academics in instilling an entrepreneurial mindset within all students and graduates through the offering of relevant knowledge, transferral of practical skills and the application of business principles, not only to a specific discipline, but across disciplines',
+            'Developing entrepreneurial universities: creating a conducive environment that will enable universities to adapt strategically and embark on projects whereby third-stream income can be generated through innovative business ideas'
+          ],
+          
+          benefits: [
+            'Develop entrepreneurial capacity of students, academics and leaders',
+            'Enable students to generate additional income during their studies',
+            'Fast-track the process of becoming economically active',
+            'Consider entrepreneurship as a career option upon graduation',
+            'Access to entrepreneurship education and training across disciplines',
+            'Connect with a national network of entrepreneurship stakeholders'
+          ],
+          
+          contactInfo: {
+            website: 'https://edhe.co.za/',
+            contact: 'https://edhe.co.za/contact/',
+            social: {
+              facebook: 'https://www.facebook.com/EDHEentrepreneurship',
+              twitter: 'https://x.com/EDHEOffical',
+              instagram: 'https://www.instagram.com/edheentrepreneurship/',
+              linkedin: 'https://www.linkedin.com/company/entrepreneurship-development-in-higher-education-edhe/?viewAsMember=true',
+              sweepLinkedin: 'https://www.linkedin.com/showcase/student-women-economic-empowerment-programme-sweep/?viewAsMember=true',
+              youtube: 'https://www.youtube.com/@entrepreneurshipdevelopmen6394'
+            }
+          },
+          
+          contact: 'info@edhe.co.za'
         }
       ],
       // Add dropdown for student chapters under funding competitions
@@ -171,6 +225,7 @@ const Programs = () => {
     { 
       id: 'sweep',
       name: 'SWEEP', 
+      image: '/images/sweep.png',
       description: 'Student Women Economic Empowerment Programme',
       fullDetails: `SWEEP is a sisterhood for economic participation aimed at promoting the economic empowerment of student women. It provides skills and opportunities interventions and seeks to address the barriers to entrepreneurship faced by student women, particularly in the context of gender-based violence. SWEEP envisions becoming a transformational empowerment community of women equipped for economic participation through entrepreneurial activity.
 
@@ -263,6 +318,7 @@ Thank you for your commitment to the SWEEP program, and we look forward to seein
     { 
       id: 'sabya',
       name: 'SABYA', 
+      image: '/images/sabya.jpeg',
       description: 'South African BRICS Youth Association',
       fullDetails: `The South African BRICS Youth Association (SABYA) is a non-profit organisation founded in 2018, with the vision to be the leading voice of Youth within BRICS+ and Advocate for their rights and interests in the decision making processes.
 
@@ -333,6 +389,7 @@ This is more than just a chapter, it's a community of driven students connecting
     { 
       id: 'hult',
       name: 'HULT Prize', 
+      image: '/images/hultprize.png',
       description: 'Global Student Entrepreneurship Competition',
       fullDetails: `UMP Hult Prize is an entrepreneurship competition housed at CFERI.
 
@@ -550,7 +607,11 @@ A PLATFORM FOR BUSINESS IDEAS`,
                         style={{ animationDelay: `${index * 0.1}s` }}
                       >
                         <div className="dropdown-item-icon" style={{ backgroundColor: category.dropdownColor }}>
-                          {chapter.id === 'sweep' ? '👭' : chapter.id === 'cop' ? '👥' : chapter.id === 'sabya' ? '🌍' : '🏆'}
+                          {chapter.image ? (
+                            <img src={chapter.image} alt={chapter.name} className="chapter-logo" />
+                          ) : (
+                            chapter.id === 'sweep' ? '👭' : chapter.id === 'cop' ? '👥' : chapter.id === 'sabya' ? '🌍' : '🏆'
+                          )}
                         </div>
                         <div className="dropdown-item-content">
                           <h4>{chapter.name}</h4>
@@ -596,9 +657,15 @@ A PLATFORM FOR BUSINESS IDEAS`,
             
             <div className="modal-header" style={{ borderColor: '#ff8c00' }}>
               <div className="modal-icon" style={{ backgroundColor: '#ff8c00' }}>
-                {selectedSectionProgram.id === 'sweep' ? '👭' : 
-                 selectedSectionProgram.id === 'cop' ? '👥' : 
-                 selectedSectionProgram.id === 'sabya' ? '🌍' : '🏆'}
+                {selectedSectionProgram.image ? (
+                  <img src={selectedSectionProgram.image} alt={selectedSectionProgram.name} className="modal-logo" />
+                ) : (
+                  selectedSectionProgram.id === 'sweep' ? '👭' : 
+                  selectedSectionProgram.id === 'cop' ? '👥' : 
+                  selectedSectionProgram.id === 'sabya' ? '🌍' : 
+                  selectedSectionProgram.id === 'hult' ? '🏆' :
+                  selectedSectionProgram.id === 'edhe-programme' ? '🎓' : '📋'
+                )}
               </div>
               <div className="modal-title">
                 <h2>{selectedSectionProgram.name}</h2>
@@ -618,6 +685,65 @@ A PLATFORM FOR BUSINESS IDEAS`,
                 <div className="modal-section">
                   <h3>About {selectedSectionProgram.name}</h3>
                   <p style={{ whiteSpace: 'pre-line' }}>{selectedSectionProgram.fullDescription}</p>
+                </div>
+              )}
+
+              {/* Goals (for EDHE Programme) */}
+              {selectedSectionProgram.goals && (
+                <div className="modal-section">
+                  <h3>Program Goals</h3>
+                  <ul className="modal-list">
+                    {selectedSectionProgram.goals.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Contact Info (for EDHE Programme) */}
+              {selectedSectionProgram.contactInfo && (
+                <div className="modal-section">
+                  <h3>Contact Information</h3>
+                  {selectedSectionProgram.contactInfo.website && (
+                    <p><i className="fas fa-globe"></i> <a href={selectedSectionProgram.contactInfo.website} target="_blank" rel="noopener noreferrer" style={{ color: '#e31b23' }}>{selectedSectionProgram.contactInfo.website}</a></p>
+                  )}
+                  {selectedSectionProgram.contactInfo.contact && (
+                    <p><i className="fas fa-envelope"></i> <a href={selectedSectionProgram.contactInfo.contact} target="_blank" rel="noopener noreferrer" style={{ color: '#e31b23' }}>Contact Page</a></p>
+                  )}
+                </div>
+              )}
+
+              {/* Social Media for EDHE Programme */}
+              {selectedSectionProgram.contactInfo?.social && (
+                <div className="modal-section">
+                  <h3>Connect on Social Media</h3>
+                  <div className="program-social-links" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                    {selectedSectionProgram.contactInfo.social.facebook && (
+                      <a href={selectedSectionProgram.contactInfo.social.facebook} target="_blank" rel="noopener noreferrer" className="social-link-prog" style={{ background: '#1877f2', color: 'white' }}>
+                        <i className="fab fa-facebook-f"></i> Facebook
+                      </a>
+                    )}
+                    {selectedSectionProgram.contactInfo.social.twitter && (
+                      <a href={selectedSectionProgram.contactInfo.social.twitter} target="_blank" rel="noopener noreferrer" className="social-link-prog" style={{ background: '#1da1f2', color: 'white' }}>
+                        <i className="fab fa-twitter"></i> Twitter
+                      </a>
+                    )}
+                    {selectedSectionProgram.contactInfo.social.instagram && (
+                      <a href={selectedSectionProgram.contactInfo.social.instagram} target="_blank" rel="noopener noreferrer" className="social-link-prog" style={{ background: '#e4405f', color: 'white' }}>
+                        <i className="fab fa-instagram"></i> Instagram
+                      </a>
+                    )}
+                    {selectedSectionProgram.contactInfo.social.linkedin && (
+                      <a href={selectedSectionProgram.contactInfo.social.linkedin} target="_blank" rel="noopener noreferrer" className="social-link-prog" style={{ background: '#0077b5', color: 'white' }}>
+                        <i className="fab fa-linkedin-in"></i> LinkedIn
+                      </a>
+                    )}
+                    {selectedSectionProgram.contactInfo.social.youtube && (
+                      <a href={selectedSectionProgram.contactInfo.social.youtube} target="_blank" rel="noopener noreferrer" className="social-link-prog" style={{ background: '#ff0000', color: 'white' }}>
+                        <i className="fab fa-youtube"></i> YouTube
+                      </a>
+                    )}
+                  </div>
                 </div>
               )}
 
@@ -735,7 +861,7 @@ A PLATFORM FOR BUSINESS IDEAS`,
               )}
 
               {/* Contact Info (for HULT) */}
-              {selectedSectionProgram.contactInfo && (
+              {selectedSectionProgram.contactInfo && selectedSectionProgram.contactInfo.phone1 && (
                 <div className="modal-section">
                   <h3>Contact Information</h3>
                   <p><i className="fas fa-phone"></i> {selectedSectionProgram.contactInfo.phone1}</p>
@@ -771,6 +897,18 @@ A PLATFORM FOR BUSINESS IDEAS`,
                   <ul className="modal-list">
                     {selectedSectionProgram.eligibility.map((item, index) => (
                       <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Prizes (for EDHE Competition) */}
+              {selectedSectionProgram.prizes && (
+                <div className="modal-section">
+                  <h3>Prizes</h3>
+                  <ul className="modal-list">
+                    {selectedSectionProgram.prizes.map((prize, index) => (
+                      <li key={index}>{prize}</li>
                     ))}
                   </ul>
                 </div>
@@ -816,8 +954,8 @@ A PLATFORM FOR BUSINESS IDEAS`,
                 )}
               </div>
 
-              {/* Social Media */}
-              {selectedSectionProgram.social && (
+              {/* Social Media (for regular programs) */}
+              {selectedSectionProgram.social && !selectedSectionProgram.contactInfo && (
                 <div className="modal-section">
                   <h3>Connect on Social Media</h3>
                   <div className="program-social-links">

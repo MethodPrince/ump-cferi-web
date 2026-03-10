@@ -119,7 +119,7 @@ const Home = () => {
 
         <div className="container">
           <div className="hero-content fade-in">
-            <h1 className="hero-title">UMP CFERI</h1>
+            <h1 className="hero-title">UMPCFERI</h1>
             <p className="hero-tagline">Creating Opportunities</p>
             <p className="hero-subtitle">
               Centre for Entrepreneurship and Rapid Incubator

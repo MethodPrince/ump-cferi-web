@@ -119,28 +119,6 @@ const About = () => {
           ))}
         </div>
       </div>
-
-      <div className="about-section">
-        <h2 className="about-title">Key Facts</h2>
-        <div className="about-grid">
-          <div className="about-card">
-            <div className="about-stat-number">50+</div>
-            <p>Businesses Supported</p>
-          </div>
-          <div className="about-card">
-            <div className="about-stat-number">100+</div>
-            <p>Jobs Created</p>
-          </div>
-          <div className="about-card">
-            <div className="about-stat-number">5+</div>
-            <p>Industry Sectors</p>
-          </div>
-          <div className="about-card">
-            <div className="about-stat-number">20+</div>
-            <p>Mentors</p>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
