@@ -7,6 +7,8 @@ const Programs = () => {
   const [selectedSectionProgram, setSelectedSectionProgram] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [showSectionModal, setShowSectionModal] = useState(false);
+  const [showSubProgramModal, setShowSubProgramModal] = useState(false);
+  const [selectedSubProgram, setSelectedSubProgram] = useState(null);
   const [openDropdown, setOpenDropdown] = useState(null);
   const location = useLocation();
 
@@ -89,10 +91,9 @@ const Programs = () => {
       color: '#e31b23',
       description: 'Opportunities to win funding and recognition for your ideas',
       programs: [
-       
         { 
-          id: 'student-indaba',
-          name: 'Student Indaba', 
+          id: 'Embedding Entreneurship',
+          name: 'Embedding Entreneurship into the curriculum', 
           description: 'Annual gathering for students to showcase innovative ideas.',
           fullDetails: 'A platform for students to present their innovative projects and business ideas to a panel of judges, industry experts, and potential investors.',
           benefits: ['Showcase ideas', 'Expert feedback', 'Investment opportunities', 'Peer learning'],
@@ -107,7 +108,15 @@ const Programs = () => {
           benefits: ['Skill development', 'Mentor training', 'Curriculum integration', 'Research opportunities'],
           contact: 'staff@umpcferi.ac.za'
         },
-        // NEW: EDHE Programme added here
+         { 
+          id: 'UNIIC',
+          name: 'UNIIC', 
+          description: 'Programs to equip staff with entrepreneurial skills.',
+          fullDetails: 'Workshops and training sessions designed to help university staff develop entrepreneurial mindsets and skills, enabling them to better support student entrepreneurs.',
+          benefits: ['Skill development', 'Mentor training', 'Curriculum integration', 'Research opportunities'],
+          contact: 'staff@umpcferi.ac.za'
+        },
+        // EDHE Programme with Student Indaba INSIDE it
         { 
           id: 'edhe-programme',
           name: 'EDHE Programme', 
@@ -155,6 +164,40 @@ This is a large and complex endeavour that requires multiple focus areas and muc
             'Connect with a national network of entrepreneurship stakeholders'
           ],
           
+          // ADDED: Student Indaba as a sub-program inside EDHE
+          subPrograms: [
+            {
+              id: 'student-indaba',
+              name: 'Student Indaba',
+              description: 'Annual gathering for students to showcase innovative ideas',
+              fullDetails: 'A platform for students to present their innovative projects and business ideas to a panel of judges, industry experts, and potential investors.',
+              fullDescription: `The Student Indaba is a premier annual event organized by Entrepreneurship Development in Higher Education (EDHE) that brings together student entrepreneurs from universities across South Africa.
+
+Key Features:
+• Student entrepreneurs showcase their innovative business ideas
+• Pitch competitions with cash prizes
+• Networking opportunities with industry experts and potential investors
+• Workshops and masterclasses on entrepreneurship skills
+• Exhibition space for student businesses to display their products and services
+
+The Indaba serves as a platform for students to gain exposure, receive feedback from experts, and connect with like-minded entrepreneurs from other institutions.`,
+              benefits: [
+                'Showcase your business idea to a national audience',
+                'Network with student entrepreneurs from other universities',
+                'Learn from successful entrepreneurs and industry experts',
+                'Opportunity to win cash prizes and recognition',
+                'Access to mentorship and funding opportunities'
+              ],
+              eligibility: [
+                'Currently enrolled university students',
+                'Open to all disciplines and faculties',
+                'Must have a business idea or existing startup'
+              ],
+              contact: 'indaba@edhe.co.za',
+              deadline: 'September 2025'
+            }
+          ],
+          
           contactInfo: {
             website: 'https://edhe.co.za/',
             contact: 'https://edhe.co.za/contact/',
@@ -194,15 +237,15 @@ This is a large and complex endeavour that requires multiple focus areas and muc
         },
         { 
           id: 'consultancy',
-          name: 'Consultancy Services', 
+          name: 'Research  Consultant', 
           description: 'Expert consultancy services for businesses and organizations.',
           fullDetails: 'Providing expert consultancy to businesses, government agencies, and non-profits on entrepreneurship development, innovation strategy, and business planning.',
           benefits: ['Expert advice', 'Custom solutions', 'Industry insights', 'Strategic planning'],
           contact: 'consult@umpcferi.ac.za'
         },
         { 
-          id: 'unicef',
-          name: 'UNICEF Collaboration', 
+          id: 'Advocacy',
+          name: 'Policy Advocacy', 
           description: 'Partnership with UNICEF on youth entrepreneurship.',
           fullDetails: 'Collaborative projects with UNICEF focusing on youth entrepreneurship, skills development, and creating economic opportunities for young people.',
           benefits: ['International partnership', 'Youth focus', 'Impact projects', 'Global network'],
@@ -210,7 +253,7 @@ This is a large and complex endeavour that requires multiple focus areas and muc
         },
         { 
           id: 'publications',
-          name: 'Publications', 
+          name: 'Research Publications', 
           description: 'Academic and practical publications on entrepreneurship.',
           fullDetails: 'Publishing research papers, case studies, and practical guides on entrepreneurship, innovation, and small business development.',
           benefits: ['Academic recognition', 'Knowledge sharing', 'Industry impact', 'Author opportunities'],
@@ -496,11 +539,19 @@ A PLATFORM FOR BUSINESS IDEAS`,
     document.body.style.overflow = 'hidden';
   };
 
+  const openSubProgramModal = (subProgram) => {
+    setSelectedSubProgram(subProgram);
+    setShowSubProgramModal(true);
+    document.body.style.overflow = 'hidden';
+  };
+
   const closeModal = () => {
     setShowModal(false);
     setShowSectionModal(false);
+    setShowSubProgramModal(false);
     setSelectedProgram(null);
     setSelectedSectionProgram(null);
+    setSelectedSubProgram(null);
     document.body.style.overflow = 'auto';
   };
 
@@ -697,6 +748,29 @@ A PLATFORM FOR BUSINESS IDEAS`,
                       <li key={index}>{item}</li>
                     ))}
                   </ul>
+                </div>
+              )}
+
+              {/* ADDED: Sub-programs section (for Student Indaba inside EDHE) */}
+              {selectedSectionProgram.subPrograms && selectedSectionProgram.subPrograms.length > 0 && (
+                <div className="modal-section">
+                  <h3>Related Programs</h3>
+                  <div className="sub-programs-list">
+                    {selectedSectionProgram.subPrograms.map((subProgram) => (
+                      <div 
+                        key={subProgram.id}
+                        className="sub-program-item"
+                        onClick={() => openSubProgramModal(subProgram)}
+                      >
+                        <div className="sub-program-icon">📅</div>
+                        <div className="sub-program-content">
+                          <h4>{subProgram.name}</h4>
+                          <p>{subProgram.description}</p>
+                          <span className="click-hint">Click to learn more <i className="fas fa-arrow-right"></i></span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               )}
 
@@ -1013,7 +1087,94 @@ A PLATFORM FOR BUSINESS IDEAS`,
 
               {/* Modal Actions */}
               <div className="modal-actions">
-                <Link to="/contact" className="btn btn-primary">Apply Now</Link>
+                <button className="btn btn-outline" onClick={closeModal}>Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Modal for Sub Programs (Student Indaba) */}
+      {showSubProgramModal && selectedSubProgram && (
+        <div className="program-modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>
+              <i className="fas fa-times"></i>
+            </button>
+            
+            <div className="modal-header" style={{ borderColor: '#e31b23' }}>
+              <div className="modal-icon" style={{ backgroundColor: '#e31b23' }}>
+                📅
+              </div>
+              <div className="modal-title">
+                <h2>{selectedSubProgram.name}</h2>
+                <p>{selectedSubProgram.description}</p>
+              </div>
+            </div>
+
+            <div className="modal-body">
+              {/* Full Details */}
+              <div className="modal-section">
+                <h3>Program Details</h3>
+                <p style={{ whiteSpace: 'pre-line' }}>{selectedSubProgram.fullDetails}</p>
+              </div>
+
+              {/* Full Description */}
+              {selectedSubProgram.fullDescription && (
+                <div className="modal-section">
+                  <h3>About {selectedSubProgram.name}</h3>
+                  <p style={{ whiteSpace: 'pre-line' }}>{selectedSubProgram.fullDescription}</p>
+                </div>
+              )}
+
+              {/* Benefits */}
+              {selectedSubProgram.benefits && (
+                <div className="modal-section">
+                  <h3>Benefits</h3>
+                  <ul className="modal-list">
+                    {selectedSubProgram.benefits.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Eligibility */}
+              {selectedSubProgram.eligibility && (
+                <div className="modal-section">
+                  <h3>Eligibility Criteria</h3>
+                  <ul className="modal-list">
+                    {selectedSubProgram.eligibility.map((item, index) => (
+                      <li key={index}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
+
+              {/* Contact and Deadline */}
+              <div className="modal-details-grid">
+                {selectedSubProgram.contact && (
+                  <div className="detail-item">
+                    <i className="far fa-envelope"></i>
+                    <div>
+                      <strong>Contact</strong>
+                      <p>{selectedSubProgram.contact}</p>
+                    </div>
+                  </div>
+                )}
+                {selectedSubProgram.deadline && (
+                  <div className="detail-item">
+                    <i className="far fa-calendar-alt"></i>
+                    <div>
+                      <strong>Deadline</strong>
+                      <p>{selectedSubProgram.deadline}</p>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {/* Modal Actions */}
+              <div className="modal-actions">
                 <button className="btn btn-outline" onClick={closeModal}>Close</button>
               </div>
             </div>
