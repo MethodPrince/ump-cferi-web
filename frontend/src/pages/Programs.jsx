@@ -52,7 +52,15 @@ const Programs = () => {
         },
         { 
           id: 'industry-development',
-          name: 'Industry Development', 
+          name: 'Mentorship', 
+          description: 'Industry-specific mentorship and networking opportunities.',
+          fullDetails: 'Connect with industry experts, attend sector-specific workshops, and gain insights into market trends. Program includes mentorship from established professionals in your field.',
+          benefits: ['Industry mentors', 'Sector workshops', 'Market insights', 'Professional network'],
+          contact: 'industry@umpcferi.ac.za'
+        },
+        { 
+          id: 'industry-development',
+          name: 'Business Compliance Planning & Registration', 
           description: 'Industry-specific mentorship and networking opportunities.',
           fullDetails: 'Connect with industry experts, attend sector-specific workshops, and gain insights into market trends. Program includes mentorship from established professionals in your field.',
           benefits: ['Industry mentors', 'Sector workshops', 'Market insights', 'Professional network'],
@@ -68,7 +76,7 @@ const Programs = () => {
         },
         { 
           id: 'record-keeping',
-          name: 'Record Keeping & Accounting', 
+          name: 'Coaching onRecord Keeping & Accounting', 
           description: 'Training in financial management and bookkeeping.',
           fullDetails: 'Workshops and training sessions on financial literacy, bookkeeping, tax compliance, and using accounting software for small businesses.',
           benefits: ['Financial literacy', 'Bookkeeping skills', 'Tax compliance', 'Software training'],
@@ -85,13 +93,13 @@ const Programs = () => {
       ]
     },
     {
-      id: 'funding-competitions',
+      id: 'Student funding-competitions',
       title: 'Entrepreneurship Development Programs',
       icon: '🏆',
       color: '#e31b23',
       description: 'Opportunities to win funding and recognition for your ideas',
       programs: [
-        { 
+      /*  { 
           id: 'Embedding Entreneurship',
           name: 'Embedding Entreneurship into the curriculum', 
           description: 'Annual gathering for students to showcase innovative ideas.',
@@ -99,7 +107,7 @@ const Programs = () => {
           benefits: ['Showcase ideas', 'Expert feedback', 'Investment opportunities', 'Peer learning'],
           contact: 'indaba@umpcferi.ac.za',
           deadline: 'September 2025'
-        },
+        },*/
         { 
           id: 'staff-capacity',
           name: 'Staff Entrepreneurship Capacity Building', 
@@ -237,7 +245,7 @@ The Indaba serves as a platform for students to gain exposure, receive feedback 
         },
         { 
           id: 'consultancy',
-          name: 'Research  Consultant', 
+          name: 'Research  Consultancy', 
           description: 'Expert consultancy services for businesses and organizations.',
           fullDetails: 'Providing expert consultancy to businesses, government agencies, and non-profits on entrepreneurship development, innovation strategy, and business planning.',
           benefits: ['Expert advice', 'Custom solutions', 'Industry insights', 'Strategic planning'],
