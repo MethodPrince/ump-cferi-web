@@ -5,9 +5,10 @@ import About from './pages/About';
 import Impact from './pages/Impact';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
+import Businesses from './pages/Businesses';
 import Login from './admin/Login';
 import Dashboard from './admin/Dashboard';
-import Businesses from './admin/Businesses';
+import AdminBusinesses from './admin/Businesses';
 import EventsAdmin from './admin/Events';
 import Mentors from './admin/Mentors';
 import Messages from './admin/Messages';
@@ -44,8 +45,9 @@ function App() {
         <Route path="/impact" element={<Impact />} />
         <Route path="/events" element={<Events />} />
         <Route path="/contact" element={<Contact />} />
-      <Route path="/newsletter" element={<Newsletter />} />
-      <Route path="/programs" element={<Programs />} />
+        <Route path="/businesses" element={<Businesses />} />
+        <Route path="/newsletter" element={<Newsletter />} />
+        <Route path="/programs" element={<Programs />} />
         
         {/* Admin Routes */}
         <Route path="/admin/login" element={
@@ -62,7 +64,7 @@ function App() {
         
         <Route path="/admin/businesses" element={
           <PrivateRoute>
-            <Businesses setAdmin={setAdmin} />
+            <AdminBusinesses setAdmin={setAdmin} />
           </PrivateRoute>
         } />
         

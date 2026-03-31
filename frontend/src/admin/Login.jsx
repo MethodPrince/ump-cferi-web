@@ -16,7 +16,8 @@ const Login = ({ setAdmin }) => {
     setError('');
     
     try {
-      const { data } = await loginAdmin(email, password);
+      const normalizedEmail = email.trim().toLowerCase();
+      const { data } = await loginAdmin(normalizedEmail, password);
       localStorage.setItem('admin', JSON.stringify(data));
       setAdmin(data);
       navigate('/admin/dashboard');
@@ -48,7 +49,7 @@ const Login = ({ setAdmin }) => {
                 id="email"
                 type="email"
                 className="admin-login-input"
-                placeholder="admin@umpcferi.ac.za"
+                placeholder="Kholofelo.Makhubepetsi@ump.ac.za"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -87,7 +88,7 @@ const Login = ({ setAdmin }) => {
           </form>
           
           <div className="admin-login-footer">
-            <p>Default: <strong>admin@umpcferi.ac.za</strong> / <strong>admin123</strong></p>
+            <p>Default: <strong>Kholofelo.Makhubepetsi@ump.ac.za</strong> / <strong>Kholo@2021.ump</strong></p>
           </div>
         </div>
       </div>

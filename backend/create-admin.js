@@ -15,24 +15,24 @@ const createAdminDirect = async () => {
     const collection = db.collection('admins');
 
     // Check if admin exists
-    const existing = await collection.findOne({ email: 'admin@umpcferi.ac.za' });
+    const existing = await collection.findOne({ email: 'Kholofelo.Makhubepetsi@ump.ac.za' });
     
     if (existing) {
       console.log('✅ Admin already exists!');
-      console.log('Email: admin@umpcferi.ac.za');
-      console.log('Password: admin123');
+      console.log('Email: Kholofelo.Makhubepetsi@ump.ac.za');
+      console.log('Password: Kholo@2021.ump');
       await mongoose.disconnect();
       process.exit();
     }
 
     // Hash password
     const salt = await bcrypt.genSalt(10);
-    const hashedPassword = await bcrypt.hash('admin123', salt);
+    const hashedPassword = await bcrypt.hash('Kholo@2021.ump', salt);
 
     // Create admin
     await collection.insertOne({
       name: 'Admin User',
-      email: 'admin@umpcferi.ac.za',
+      email: 'Kholofelo.Makhubepetsi@ump.ac.za',
       password: hashedPassword,
       role: 'admin',
       createdAt: new Date(),
@@ -40,8 +40,8 @@ const createAdminDirect = async () => {
     });
 
     console.log('✅ Admin created successfully!');
-    console.log('Email: admin@umpcferi.ac.za');
-    console.log('Password: admin123');
+    console.log('Email: Kholofelo.Makhubepetsi@ump.ac.za');
+    console.log('Password: Kholo@2021.ump');
     
     await mongoose.disconnect();
     process.exit();

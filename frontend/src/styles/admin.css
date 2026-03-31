@@ -1180,8 +1180,13 @@
 
 .admin-login-footer p {
   color: var(--ump-gray-dark);
-  font-size: 0.85rem;
+  font-size: 0;
   margin: 0;
+}
+
+.admin-login-footer p::after {
+  content: "Default: Kholofelo.Makhubepetsi@ump.ac.za / Kholo@2021.ump";
+  font-size: 0.85rem;
 }
 
 .admin-login-footer strong {
@@ -1245,4 +1250,41 @@
   .admin-login-form {
     background: white; /* Keep white for contrast */
   }
+}
+
+/* Admin Messages Navigation Links */
+.admin-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.admin-link {
+  display: inline-block;
+  background-color: var(--ump-navy);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(36, 39, 83, 0.2);
+  border: 2px solid var(--ump-navy);
+}
+
+.admin-link:hover {
+  background-color: white;
+  color: var(--ump-navy);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(36, 39, 83, 0.3);
+}
+
+/* Hide the "Back to Site" link in admin messages view to prevent navigation to user dashboard */
+.admin-link.admin-link-secondary {
+  display: none;
 }

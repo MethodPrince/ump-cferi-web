@@ -1,10 +1,10 @@
 /* UMP THEME - Brand Colors & Variables */
 :root {
   /* UMP Primary Navy Blue - Pantone 274 C */
-  --ump-navy: #242753;
-  --ump-navy-rgb: 36, 39, 83;
-  --ump-navy-light: #2f3370;
-  --ump-navy-dark: #1a1c3d;
+  --ump-navy: #323a85;
+  --ump-navy-rgb: 50, 58, 133;
+  --ump-navy-light: #4152a6;
+  --ump-navy-dark: #252a5c;
   
   /* UMP Gold - Original Accent Color */
   --ump-gold: #ffd700;

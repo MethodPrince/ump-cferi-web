@@ -12,7 +12,8 @@ const loginAdmin = async (req, res) => {
   const { email, password } = req.body;
 
   try {
-    const admin = await Admin.findOne({ email });
+    const normalizedEmail = String(email || '').trim().toLowerCase();
+    const admin = await Admin.findOne({ email: normalizedEmail });
 
     if (admin && (await admin.matchPassword(password))) {
       res.json({

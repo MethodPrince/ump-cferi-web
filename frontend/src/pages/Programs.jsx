@@ -38,8 +38,8 @@ const Programs = () => {
     {
       id: 'incubation-programs',
       title: 'Incubation Programs',
-      icon: '🚀',
-      color: '#242753',
+      icon: '',
+      color: '#5b60ae',
       description: 'Comprehensive support for startups at every stage',
       programs: [
         { 
@@ -95,8 +95,8 @@ const Programs = () => {
     {
       id: 'Student funding-competitions',
       title: 'Entrepreneurship Development Programs',
-      icon: '🏆',
-      color: '#e31b23',
+      icon: '',
+      color: '#cd3136',
       description: 'Opportunities to win funding and recognition for your ideas',
       programs: [
       /*  { 
@@ -225,47 +225,55 @@ The Indaba serves as a platform for students to gain exposure, receive feedback 
       // Add dropdown for student chapters under funding competitions
       hasDropdown: true,
       dropdownTitle: 'CFERI Student Chapters',
-      dropdownIcon: '👥',
+      dropdownIcon: '',
       dropdownColor: '#ff8c00'
     },
     {
       id: 'research-activities',
       title: 'Research Activities',
-      icon: '📚',
+      icon: '',
       color: '#9c27b0',
       description: 'Cutting-edge research in entrepreneurship and innovation',
       programs: [
         { 
           id: 'entrepreneurship-research',
-          name: 'Research on Entrepreneurship Development', 
-          description: 'Cutting-edge research on entrepreneurship trends.',
-          fullDetails: 'Conducting and publishing research on entrepreneurship ecosystems, startup success factors, and innovation trends in South Africa and beyond.',
+          name: 'Research in Entrepreneurship Development', 
+          description: 'An emerging hub for high-impact research in entrepreneurship, innovation, and inclusive economic development.',
+          fullDetails: `The University of Mpumalanga Centre for Entrepreneurship Rapid Incubator (CFERI) is an emerging hub for high-impact research in entrepreneurship, innovation, and inclusive economic development. Within a short period, the Centre has demonstrated rapid growth in research output, with increasing publications, a strong pipeline of ongoing studies, and international recognition through conference participation and awards.\n\nCFERI’s research focuses on delivering practical, evidence-based insights to address key development challenges, including unemployment, small-business sustainability, and economic transformation. By integrating entrepreneurship with economic and innovation analysis, the Centre produces research that is both academically rigorous and directly relevant to policy and practice.`,
           benefits: ['Research grants', 'Publications', 'Conference presentations', 'Policy influence'],
           contact: 'research@umpcferi.ac.za'
         },
         { 
           id: 'consultancy',
-          name: 'Research  Consultancy', 
-          description: 'Expert consultancy services for businesses and organizations.',
-          fullDetails: 'Providing expert consultancy to businesses, government agencies, and non-profits on entrepreneurship development, innovation strategy, and business planning.',
+          name: 'Research Consultancy', 
+          description: 'Tailored research consultancy services for government, private sector organisations, and development partners.',
+          fullDetails: `CFERI provides research consultancy services tailored to the needs of government, private sector organisations, and development partners. The Centre specialises in policy analysis, programme evaluation, and impact assessment across entrepreneurial ecosystems, SME development, and innovation-led growth.\n\nWith a strong interdisciplinary foundation, CFERI delivers data-driven, context-specific solutions that support strategic decision-making and measurable development outcomes.`,
           benefits: ['Expert advice', 'Custom solutions', 'Industry insights', 'Strategic planning'],
           contact: 'consult@umpcferi.ac.za'
         },
         { 
           id: 'Advocacy',
           name: 'Policy Advocacy', 
-          description: 'Partnership with UNICEF on youth entrepreneurship.',
-          fullDetails: 'Collaborative projects with UNICEF focusing on youth entrepreneurship, skills development, and creating economic opportunities for young people.',
-          benefits: ['International partnership', 'Youth focus', 'Impact projects', 'Global network'],
-          contact: 'unicef@umpcferi.ac.za'
+          description: 'Contributing to policy development through research-driven advocacy.',
+          fullDetails: `CFERI actively contributes to policy development through research-driven advocacy. The Centre works with stakeholders to shape policies that strengthen entrepreneurial ecosystems, support emerging enterprises, and promote inclusive economic growth.\n\nIts policy engagement is grounded in empirical research and aligned with national and regional development priorities.`,
+          benefits: ['Policy development', 'Stakeholder engagement', 'Inclusive growth', 'Ecosystem strengthening'],
+          contact: 'research@umpcferi.ac.za'
         },
         { 
           id: 'publications',
           name: 'Research Publications', 
-          description: 'Academic and practical publications on entrepreneurship.',
-          fullDetails: 'Publishing research papers, case studies, and practical guides on entrepreneurship, innovation, and small business development.',
+          description: 'Growing portfolio of peer-reviewed publications and conference outputs.',
+          fullDetails: `CFERI has a growing portfolio of peer-reviewed publications and conference outputs that contribute to academic scholarship and inform policy discussions. The Centre’s work continues to gain visibility both locally and internationally, reinforcing its position as a credible research partner in entrepreneurship and development.`,
           benefits: ['Academic recognition', 'Knowledge sharing', 'Industry impact', 'Author opportunities'],
           contact: 'publications@umpcferi.ac.za'
+        },
+        {
+          id: 'partner-cferi',
+          name: 'Partner with CFERI',
+          description: 'Collaboration opportunities with government institutions, industry partners, and development agencies.',
+          fullDetails: `CFERI welcomes collaboration with government institutions, industry partners, development agencies, and academic institutions. Through research, consultancy, and policy engagement, the Centre offers a platform for generating knowledge, shaping policy, and driving sustainable economic impact.`,
+          benefits: ['Generating knowledge', 'Shaping policy', 'Sustainable impact', 'Strategic collaboration'],
+          contact: 'partner@umpcferi.ac.za'
         }
       ]
     }

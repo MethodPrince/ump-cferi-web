@@ -10,29 +10,30 @@ const createAdmin = async () => {
     await mongoose.connect(process.env.MONGODB_URI);
     console.log('✅ Connected to MongoDB');
 
+    const email = 'kholofelo.makhubepetsi@ump.ac.za';
+    const password = 'Kholo@2021.ump';
+
     // Check if admin already exists
-    const existingAdmin = await Admin.findOne({ email: 'admin@umpcferi.ac.za' });
+    let admin = await Admin.findOne({ email });
     
-    if (existingAdmin) {
-      console.log('✅ Admin already exists!');
-      console.log('Email: admin@umpcferi.ac.za');
-      console.log('Password: admin123');
-      await mongoose.disconnect();
-      process.exit();
+    if (admin) {
+      console.log('ℹ️ Admin exists, updating password...');
+      admin.password = password; // Will be hashed by pre-save hook
+      await admin.save();
+      console.log('✅ Admin password updated!');
+    } else {
+      // Create new admin
+      admin = new Admin({
+        name: 'Admin User',
+        email,
+        password
+      });
+      await admin.save();
+      console.log('✅ Admin created successfully!');
     }
-
-    // Create new admin
-    const admin = new Admin({
-      name: 'Admin User',
-      email: 'admin@umpcferi.ac.za',
-      password: 'admin123'
-    });
-
-    await admin.save();
     
-    console.log('✅ Admin created successfully!');
-    console.log('Email:', admin.email);
-    console.log('Password: admin123');
+    console.log('Email:', email);
+    console.log('Password:', password);
     
     await mongoose.disconnect();
     process.exit();
