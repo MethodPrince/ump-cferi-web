@@ -96,7 +96,7 @@ const Programs = () => {
       id: 'Student funding-competitions',
       title: 'Entrepreneurship Development Programs',
       icon: '',
-      color: '#cd3136',
+      color: '#cd3131',
       description: 'Opportunities to win funding and recognition for your ideas',
       programs: [
       /*  { 
@@ -226,13 +226,13 @@ The Indaba serves as a platform for students to gain exposure, receive feedback 
       hasDropdown: true,
       dropdownTitle: 'CFERI Student Chapters',
       dropdownIcon: '',
-      dropdownColor: '#ff8c00'
+      dropdownColor: '#ff9d00'
     },
     {
       id: 'research-activities',
       title: 'Research Activities',
       icon: '',
-      color: '#8727b0',
+      color: '#ff9d00',
       description: 'Cutting-edge research in entrepreneurship and innovation',
       programs: [
         { 
