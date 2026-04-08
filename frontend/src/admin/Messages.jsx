@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getMessages, logoutAdmin } from '../services/api';
+import { getMessages, logoutAdmin, updateMessageStatus } from '../services/api';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/admin.css';
 
@@ -30,6 +30,17 @@ const Messages = ({ setAdmin }) => {
     }
   };
 
+  const handleStatusChange = async (messageId, currentStatus) => {
+    const newStatus = currentStatus === 'answered' ? 'unanswered' : 'answered';
+    try {
+      const { data } = await updateMessageStatus(messageId, { status: newStatus });
+      setMessages(messages.map(msg => msg._id === messageId ? data : msg));
+    } catch (error) {
+      console.error('Failed to update message status', error);
+      alert('Failed to update message status');
+    }
+  };
+
   if (loading) return <div className="admin-messages-container loading">Loading...</div>;
 
   return (
@@ -47,15 +58,25 @@ const Messages = ({ setAdmin }) => {
         ) : (
           messages.map(msg => (
             <div key={msg._id} className="admin-message-card">
-              <h3 className="admin-message-sender">{msg.senderName}</h3>
-              <p className="admin-message-email">{msg.senderEmail}</p>
+              <div className="admin-message-header">
+                <div>
+                  <h3 className="admin-message-sender">{msg.senderName}</h3>
+                  <p className="admin-message-email">{msg.senderEmail}</p>
+                </div>
+                <div className="admin-message-status-checkbox">
+                  <label>
+                    <input
+                      type="checkbox"
+                      checked={msg.status === 'answered'}
+                      onChange={() => handleStatusChange(msg._id, msg.status)}
+                    />
+                    <span className={`admin-message-status ${msg.status === 'answered' ? 'status-answered' : 'status-unanswered'}`}>
+                      {msg.status}
+                    </span>
+                  </label>
+                </div>
+              </div>
               <p className="admin-message-text">{msg.message}</p>
-              <p>
-                <strong>Status:</strong> 
-                <span className={`admin-message-status ${msg.status === 'answered' ? 'status-answered' : 'status-unanswered'}`}>
-                  {msg.status}
-                </span>
-              </p>
               {msg.reply && (
                 <div className="admin-message-reply">
                   <strong>Reply:</strong>

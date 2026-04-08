@@ -232,7 +232,7 @@ The Indaba serves as a platform for students to gain exposure, receive feedback 
       id: 'research-activities',
       title: 'Research Activities',
       icon: '',
-      color: '#9c27b0',
+      color: '#8727b0',
       description: 'Cutting-edge research in entrepreneurship and innovation',
       programs: [
         { 

@@ -5,6 +5,7 @@ const {
   getMessageById,
   createMessage,
   replyToMessage,
+  updateMessageStatus,
   deleteMessage
 } = require("../controllers/messageController");
 const { protect } = require("../middleware/authMiddleware");
@@ -12,6 +13,9 @@ const { protect } = require("../middleware/authMiddleware");
 router.route("/")
   .get(protect, getMessages)
   .post(createMessage);
+
+router.route("/:id/status")
+  .patch(protect, updateMessageStatus);
 
 router.route("/:id")
   .get(protect, getMessageById)

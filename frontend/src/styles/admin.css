@@ -703,6 +703,77 @@
   box-shadow: 0 8px 30px rgba(36, 39, 83, 0.15);
 }
 
+.admin-message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+  gap: 1rem;
+}
+
+.admin-message-sender {
+  color: var(--ump-navy);
+  font-family: 'Brandon Grotesque', Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem 0;
+}
+
+.admin-message-email {
+  color: var(--ump-gold);
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0 0 0.8rem 0;
+}
+
+.admin-message-text {
+  color: var(--ump-black);
+  line-height: 1.6;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.admin-message-status-checkbox {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.admin-message-status-checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.admin-message-status-checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: var(--ump-gold);
+}
+
+.admin-message-reply {
+  background: #e8f4fd;
+  padding: 1.2rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  border-left: 4px solid #17a2b8;
+}
+
+.admin-message-reply strong {
+  color: var(--ump-navy);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.admin-message-date {
+  color: var(--ump-gray-dark);
+  font-size: 0.85rem;
+  margin-top: 1rem;
+}
+
 .message-header {
   display: flex;
   justify-content: space-between;

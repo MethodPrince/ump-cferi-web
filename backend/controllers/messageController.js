@@ -57,6 +57,22 @@ const replyToMessage = async (req, res) => {
   }
 };
 
+// Update message status (protected)
+const updateMessageStatus = async (req, res) => {
+  try {
+    const message = await Message.findById(req.params.id);
+    if (message) {
+      message.status = req.body.status;
+      const updatedMessage = await message.save();
+      res.json(updatedMessage);
+    } else {
+      res.status(404).json({ message: "Message not found" });
+    }
+  } catch (error) {
+    res.status(500).json({ message: "Server error" });
+  }
+};
+
 // Delete message (protected)
 const deleteMessage = async (req, res) => {
   try {
@@ -77,5 +93,6 @@ module.exports = {
   getMessageById,
   createMessage,
   replyToMessage,
+  updateMessageStatus,
   deleteMessage
 };
