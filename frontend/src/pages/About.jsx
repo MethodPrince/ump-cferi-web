@@ -1,6 +1,10 @@
+import { useState } from 'react';
 import '../styles/about.css';
 
 const About = () => {
+  const [selectedCategory, setSelectedCategory] = useState('all');
+  const [selectedImage, setSelectedImage] = useState(null);
+
   // Journey data with exact words from the document
   const journeyData = [
     {
@@ -26,8 +30,75 @@ const About = () => {
     {
       year: '2025',
       message: '• HOSTED AFRICA-ASIA ROUNDTABLE EVENT WITH MORE THAN 90 DELEGATES FROM MORE THAN 11 COUNTRIES.\n• ENTREPRENEURSHIP BOOTCAMP (SKILLS + INCUBATION PIPELINE).\n• SWEEP BRANDING MASTERCLASS.\n• EDHE-FULBRIGHT WORKSHOP ON EMBEDDING ENTREPRENEURSHIP INTO THE CURRICULUM.\n• STANDARD BANK PITCHING MASTERCLASS.\n• UMPCFERI STUDENTPRENEUR WINS 1ST PLACE AT THE ABSA/YAEI 2025 COMPETITION.\n• UMPCFERI STAKEHOLDER ENGAGEMENT.\n• CFERI WINS ENGAGEMENT TEAM EXCELLENCE AWARDS.'
+    },
+    {
+      year: '2026',
+      message: '• HOSTED EDHE ABSA ENTREPRENEURSHIP INNOVARSITY 2026 NATIONAL LUNCH ON 17 APRIL 2026 AT UNIVERSITY OF MPUMALANGA.'
     }
   ];
+
+  const galleryImages = [
+    { src: '/images/audiencesimages/IMG_0738.jpg', category: 'audiences', title: 'Event Audience', description: 'Engaged participants at UMPCFERI events' },
+    { src: '/images/audiencesimages/IMG_0807.jpg', category: 'audiences', title: 'Event Attendees', description: 'Diverse audience showing interest' },
+    { src: '/images/audiencesimages/IMG_0828.jpg', category: 'audiences', title: 'Crowd Engagement', description: 'Active participation in sessions' },
+    { src: '/images/audiencesimages/IMG_0947.jpg', category: 'audiences', title: 'Audience Focus', description: 'Attentive listeners during presentations' },
+    { src: '/images/audiencesimages/IMG_0961.jpg', category: 'audiences', title: 'Group Session', description: 'Interactive audience engagement' },
+    { src: '/images/audiencesimages/IMG_1052.jpg', category: 'audiences', title: 'Event Participants', description: 'Community involvement' },
+    { src: '/images/audiencesimages/IMG_1117.jpg', category: 'audiences', title: 'Workshop Audience', description: 'Learning and networking' },
+    { src: '/images/audiencesimages/IMG_1150.jpg', category: 'audiences', title: 'Seminar Attendees', description: 'Knowledge sharing session' },
+    { src: '/images/choirimages/IMG_0783.jpg', category: 'choir', title: 'Choir Performance', description: 'Cultural entertainment at events' },
+    { src: '/images/choirimages/IMG_0791.jpg', category: 'choir', title: 'Musical Performance', description: 'Traditional choir singing' },
+    { src: '/images/choirimages/IMG_0805.jpg', category: 'choir', title: 'Choir Group', description: 'Harmonious musical presentation' },
+    { src: '/images/choirimages/IMG_0821.jpg', category: 'choir', title: 'Cultural Performance', description: 'Entertainment during events' },
+    { src: '/images/groupimages/IMG_0728.jpg', category: 'groups', title: 'Team Discussion', description: 'Collaborative brainstorming session' },
+    { src: '/images/groupimages/IMG_0730.jpg', category: 'groups', title: 'Group Meeting', description: 'Entrepreneurship discussions' },
+    { src: '/images/groupimages/IMG_1243.jpg', category: 'groups', title: 'Workshop Group', description: 'Interactive learning session' },
+    { src: '/images/groupimages/IMG_1507.jpg', category: 'groups', title: 'Team Collaboration', description: 'Working together on projects' },
+    { src: '/images/groupimages/IMG_1511.jpg', category: 'groups', title: 'Group Activity', description: 'Hands-on entrepreneurship training' },
+    { src: '/images/groupimages/IMG_1523.jpg', category: 'groups', title: 'Mentorship Session', description: 'Guidance and support' },
+    { src: '/images/groupimages/IMG_1524.jpg', category: 'groups', title: 'Team Building', description: 'Building entrepreneurial skills' },
+    { src: '/images/groupimages/IMG_1539.jpg', category: 'groups', title: 'Collaborative Work', description: 'Group project development' },
+    { src: '/images/groupimages/IMG_1543.jpg', category: 'groups', title: 'Innovation Workshop', description: 'Creative problem solving' },
+    { src: '/images/groupimages/IMG_1546.jpg', category: 'groups', title: 'Entrepreneurial Minds', description: 'Future business leaders' },
+    { src: '/images/interactionImages/IMG_0709.jpg', category: 'interactions', title: 'Networking Session', description: 'Building connections and partnerships' },
+    { src: '/images/interactionImages/IMG_0712.jpg', category: 'interactions', title: 'Interactive Discussion', description: 'Engaged conversation' },
+    { src: '/images/interactionImages/IMG_0826.jpg', category: 'interactions', title: 'Mentor-Mentee', description: 'Knowledge transfer and guidance' },
+    { src: '/images/interactionImages/IMG_1248.jpg', category: 'interactions', title: 'Collaborative Exchange', description: 'Sharing ideas and experiences' },
+    { src: '/images/interactionImages/IMG_1260.jpg', category: 'interactions', title: 'Business Networking', description: 'Professional connections' },
+    { src: '/images/interactionImages/IMG_1403.jpg', category: 'interactions', title: 'Interactive Workshop', description: 'Hands-on learning experience' },
+    { src: '/images/interactionImages/IMG_1409.jpg', category: 'interactions', title: 'Group Interaction', description: 'Team collaboration' },
+    { src: '/images/interactionImages/IMG_1420.jpg', category: 'interactions', title: 'Discussion Forum', description: 'Open dialogue and exchange' },
+    { src: '/images/speakersimages/IMG_0756.jpg', category: 'speakers', title: 'Keynote Speaker', description: 'Expert sharing insights' },
+    { src: '/images/speakersimages/IMG_0928.jpg', category: 'speakers', title: 'Panel Discussion', description: 'Expert panel sharing knowledge' },
+    { src: '/images/speakersimages/IMG_0968.jpg', category: 'speakers', title: 'Guest Speaker', description: 'Industry expert presentation' },
+    { src: '/images/speakersimages/IMG_1000.jpg', category: 'speakers', title: 'Motivational Speaker', description: 'Inspiring entrepreneurship' },
+    { src: '/images/speakersimages/IMG_1077.jpg', category: 'speakers', title: 'Workshop Facilitator', description: 'Guiding learning sessions' },
+    { src: '/images/speakersimages/IMG_1093.jpg', category: 'speakers', title: 'Industry Expert', description: 'Sharing real-world experience' },
+    { src: '/images/speakersimages/IMG_1283.jpg', category: 'speakers', title: 'Entrepreneur Speaker', description: 'Success story sharing' },
+    { src: '/images/speakersimages/IMG_1299.jpg', category: 'speakers', title: 'Academic Speaker', description: 'Research and education insights' },
+    { src: '/images/speakersimages/IMG_1481.jpg', category: 'speakers', title: 'Leadership Speaker', description: 'Leadership and management' }
+  ];
+
+  const categories = [
+    { id: 'all', name: 'All Highlights', count: galleryImages.length },
+    { id: 'audiences', name: 'Event Audiences', count: galleryImages.filter(img => img.category === 'audiences').length },
+    { id: 'choir', name: 'Choir Performances', count: galleryImages.filter(img => img.category === 'choir').length },
+    { id: 'groups', name: 'Group Activities', count: galleryImages.filter(img => img.category === 'groups').length },
+    { id: 'interactions', name: 'Interactions', count: galleryImages.filter(img => img.category === 'interactions').length },
+    { id: 'speakers', name: 'Speakers & Experts', count: galleryImages.filter(img => img.category === 'speakers').length }
+  ];
+
+  const filteredImages = selectedCategory === 'all' 
+    ? galleryImages 
+    : galleryImages.filter(img => img.category === selectedCategory);
+
+  const openLightbox = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeLightbox = () => {
+    setSelectedImage(null);
+  };
 
   return (
     <div className="about-container">
@@ -118,6 +189,54 @@ const About = () => {
             </div>
           ))}
         </div>
+      </div>
+
+      {/* Enhanced Gallery Section */}
+      <div className="about-section">
+        <h2 className="about-title">Event Highlights Gallery</h2>
+        <p className="gallery-subtitle">Explore our vibrant community events, performances, and entrepreneurial activities</p>
+
+        <div className="gallery-filters">
+          {categories.map(category => (
+            <button
+              key={category.id}
+              className={`filter-btn ${selectedCategory === category.id ? 'active' : ''}`}
+              onClick={() => setSelectedCategory(category.id)}
+            >
+              {category.name} ({category.count})
+            </button>
+          ))}
+        </div>
+
+        <div className="gallery-grid">
+          {filteredImages.map((image, index) => (
+            <div
+              key={`${image.category}-${index}`}
+              className="gallery-item animate-in"
+              style={{ animationDelay: `${index * 0.1}s` }}
+              onClick={() => openLightbox(image)}
+            >
+              <img src={image.src} alt={image.title} loading="lazy" />
+              <div className="gallery-overlay">
+                <h4 className="gallery-title">{image.title}</h4>
+                <p className="gallery-description">{image.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {selectedImage && (
+          <div className="lightbox" onClick={closeLightbox}>
+            <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+              <img src={selectedImage.src} alt={selectedImage.title} />
+              <div className="lightbox-info">
+                <h3>{selectedImage.title}</h3>
+                <p>{selectedImage.description}</p>
+              </div>
+              <button className="close-btn" onClick={closeLightbox}>×</button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

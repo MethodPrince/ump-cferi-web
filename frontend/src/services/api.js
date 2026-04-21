@@ -6,26 +6,12 @@ const SOCKET_URL = process.env.REACT_APP_SOCKET_URL || 'http://localhost:5000';
 
 const api = axios.create({ baseURL: API_URL });
 
-// Add token to requests
-api.interceptors.request.use((config) => {
-  const admin = localStorage.getItem('admin');
-  if (admin) {
-    const { token } = JSON.parse(admin);
-    config.headers.Authorization = `Bearer ${token}`;
-  }
-  return config;
-});
-
 // ========== AUTH ==========
 export const loginAdmin = (email, password) => api.post('/admin/login', { email, password });
 export const getDashboard = () => api.get('/admin/dashboard');
 export const logoutAdmin = () => {
-  localStorage.removeItem('admin');
+  setAuthToken(null);
   return Promise.resolve();
-};
-export const checkAuthStatus = () => {
-  const admin = localStorage.getItem('admin');
-  return Promise.resolve(admin ? JSON.parse(admin) : null);
 };
 export const setAuthToken = (token) => {
   if (token) {

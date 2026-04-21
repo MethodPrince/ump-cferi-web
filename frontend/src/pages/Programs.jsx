@@ -48,7 +48,7 @@ const Programs = () => {
           description: 'Access to affordable workspace and facilities for your startup.',
           fullDetails: 'State-of-the-art facilities including co-working spaces, meeting rooms, and specialized equipment available at subsidized rates for student entrepreneurs. Located at the UMPCFERI hub on Mbombela Campus.',
           benefits: ['Affordable rates', 'Flexible terms', 'Access to equipment', 'Networking opportunities'],
-          contact: 'facilities@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         { 
           id: 'industry-development',
@@ -56,7 +56,7 @@ const Programs = () => {
           description: 'Industry-specific mentorship and networking opportunities.',
           fullDetails: 'Connect with industry experts, attend sector-specific workshops, and gain insights into market trends. Program includes mentorship from established professionals in your field.',
           benefits: ['Industry mentors', 'Sector workshops', 'Market insights', 'Professional network'],
-          contact: 'industry@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         { 
           id: 'industry-development',
@@ -64,7 +64,7 @@ const Programs = () => {
           description: 'Industry-specific mentorship and networking opportunities.',
           fullDetails: 'Connect with industry experts, attend sector-specific workshops, and gain insights into market trends. Program includes mentorship from established professionals in your field.',
           benefits: ['Industry mentors', 'Sector workshops', 'Market insights', 'Professional network'],
-          contact: 'industry@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         { 
           id: 'business-plan',
@@ -72,7 +72,7 @@ const Programs = () => {
           description: 'Expert guidance in creating comprehensive business plans.',
           fullDetails: 'One-on-one coaching to develop a robust business plan that attracts investors. Covers market analysis, financial projections, and operational strategies.',
           benefits: ['Expert coaches', 'Investor-ready plans', 'Financial modeling', 'Market research support'],
-          contact: 'businessplan@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         { 
           id: 'record-keeping',
@@ -80,7 +80,7 @@ const Programs = () => {
           description: 'Training in financial management and bookkeeping.',
           fullDetails: 'Workshops and training sessions on financial literacy, bookkeeping, tax compliance, and using accounting software for small businesses.',
           benefits: ['Financial literacy', 'Bookkeeping skills', 'Tax compliance', 'Software training'],
-          contact: 'finance@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         { 
           id: 'market-strategy',
@@ -88,7 +88,7 @@ const Programs = () => {
           description: 'Strategic guidance on market positioning and growth.',
           fullDetails: 'Develop effective market entry and growth strategies. Learn about customer acquisition, branding, pricing strategies, and competitive analysis.',
           benefits: ['Market positioning', 'Growth strategies', 'Customer acquisition', 'Competitive analysis'],
-          contact: 'marketing@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         }
       ]
     },
@@ -114,7 +114,7 @@ const Programs = () => {
           description: 'Programs to equip staff with entrepreneurial skills.',
           fullDetails: 'Workshops and training sessions designed to help university staff develop entrepreneurial mindsets and skills, enabling them to better support student entrepreneurs.',
           benefits: ['Skill development', 'Mentor training', 'Curriculum integration', 'Research opportunities'],
-          contact: 'staff@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
          { 
           id: 'UNIIC',
@@ -122,7 +122,7 @@ const Programs = () => {
           description: 'Programs to equip staff with entrepreneurial skills.',
           fullDetails: 'Workshops and training sessions designed to help university staff develop entrepreneurial mindsets and skills, enabling them to better support student entrepreneurs.',
           benefits: ['Skill development', 'Mentor training', 'Curriculum integration', 'Research opportunities'],
-          contact: 'staff@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         // EDHE Programme with Student Indaba INSIDE it
         { 
@@ -241,7 +241,7 @@ The Indaba serves as a platform for students to gain exposure, receive feedback 
           description: 'An emerging hub for high-impact research in entrepreneurship, innovation, and inclusive economic development.',
           fullDetails: `The University of Mpumalanga Centre for Entrepreneurship Rapid Incubator (CFERI) is an emerging hub for high-impact research in entrepreneurship, innovation, and inclusive economic development. Within a short period, the Centre has demonstrated rapid growth in research output, with increasing publications, a strong pipeline of ongoing studies, and international recognition through conference participation and awards.\n\nCFERI’s research focuses on delivering practical, evidence-based insights to address key development challenges, including unemployment, small-business sustainability, and economic transformation. By integrating entrepreneurship with economic and innovation analysis, the Centre produces research that is both academically rigorous and directly relevant to policy and practice.`,
           benefits: ['Research grants', 'Publications', 'Conference presentations', 'Policy influence'],
-          contact: 'research@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         { 
           id: 'consultancy',
@@ -249,7 +249,7 @@ The Indaba serves as a platform for students to gain exposure, receive feedback 
           description: 'Tailored research consultancy services for government, private sector organisations, and development partners.',
           fullDetails: `CFERI provides research consultancy services tailored to the needs of government, private sector organisations, and development partners. The Centre specialises in policy analysis, programme evaluation, and impact assessment across entrepreneurial ecosystems, SME development, and innovation-led growth.\n\nWith a strong interdisciplinary foundation, CFERI delivers data-driven, context-specific solutions that support strategic decision-making and measurable development outcomes.`,
           benefits: ['Expert advice', 'Custom solutions', 'Industry insights', 'Strategic planning'],
-          contact: 'consult@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         { 
           id: 'Advocacy',
@@ -257,7 +257,7 @@ The Indaba serves as a platform for students to gain exposure, receive feedback 
           description: 'Contributing to policy development through research-driven advocacy.',
           fullDetails: `CFERI actively contributes to policy development through research-driven advocacy. The Centre works with stakeholders to shape policies that strengthen entrepreneurial ecosystems, support emerging enterprises, and promote inclusive economic growth.\n\nIts policy engagement is grounded in empirical research and aligned with national and regional development priorities.`,
           benefits: ['Policy development', 'Stakeholder engagement', 'Inclusive growth', 'Ecosystem strengthening'],
-          contact: 'research@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         { 
           id: 'publications',
@@ -265,7 +265,7 @@ The Indaba serves as a platform for students to gain exposure, receive feedback 
           description: 'Growing portfolio of peer-reviewed publications and conference outputs.',
           fullDetails: `CFERI has a growing portfolio of peer-reviewed publications and conference outputs that contribute to academic scholarship and inform policy discussions. The Centre’s work continues to gain visibility both locally and internationally, reinforcing its position as a credible research partner in entrepreneurship and development.`,
           benefits: ['Academic recognition', 'Knowledge sharing', 'Industry impact', 'Author opportunities'],
-          contact: 'publications@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         },
         {
           id: 'partner-cferi',
@@ -273,7 +273,7 @@ The Indaba serves as a platform for students to gain exposure, receive feedback 
           description: 'Collaboration opportunities with government institutions, industry partners, and development agencies.',
           fullDetails: `CFERI welcomes collaboration with government institutions, industry partners, development agencies, and academic institutions. Through research, consultancy, and policy engagement, the Centre offers a platform for generating knowledge, shaping policy, and driving sustainable economic impact.`,
           benefits: ['Generating knowledge', 'Shaping policy', 'Sustainable impact', 'Strategic collaboration'],
-          contact: 'partner@umpcferi.ac.za'
+          contact: 'cferi_bdo@ump.ac.za'
         }
       ]
     }
@@ -348,7 +348,7 @@ Thank you for your commitment to the SWEEP program, and we look forward to seein
       ],
       
       partners: ['Old Mutual', 'ABSA', 'Women in Business Association', 'SEDA', 'EDHE'],
-      contact: 'sweep@umpcferi.ac.za',
+      contact: 'cferi_bdo@ump.ac.za',
       social: {
         tiktok: 'https://www.tiktok.com/@umpsweep.chapter'
       },
@@ -372,7 +372,7 @@ Thank you for your commitment to the SWEEP program, and we look forward to seein
         'Open to all faculties and academic levels',
         'Commitment to active participation'
       ],
-      contact: 'cop@umpcferi.ac.za'
+      contact: 'cferi_bdo@ump.ac.za'
     },
     { 
       id: 'sabya',
@@ -438,7 +438,7 @@ This is more than just a chapter, it's a community of driven students connecting
       ],
       
       partners: ['BRICS+', 'UMPCFERI', 'SABYA National'],
-      contact: 'sabya@umpcferi.ac.za',
+      contact: 'cferi_bdo@ump.ac.za',
       social: {
         instagram: 'https://www.instagram.com/umpcferi_sabya_chapter'
       },
@@ -450,92 +450,288 @@ This is more than just a chapter, it's a community of driven students connecting
       name: 'HULT Prize', 
       image: '/images/hultprize.png',
       description: 'Global Student Entrepreneurship Competition',
-      fullDetails: `UMP Hult Prize is an entrepreneurship competition housed at CFERI.
+      eventReport: {
+        title: 'UMP HULTPRIZE LOCAL COMPETITION EVENT REPORT - 24 FEBRUARY 2026',
+        sections: [
+          {
+            heading: 'INTRODUCTION',
+            content: `The HultPrize UMP Local Competition, held on the 24th of February 2026 at the University of Mpumalanga (UMP), formed part of the global Hult Prize Foundation movement, which empowers university students to develop innovative social enterprises that address pressing global challenges. The competition provided a dynamic platform for young entrepreneurs to showcase transformative business ideas aligned with this year's global challenge theme.
 
-A PLATFORM FOR BUSINESS IDEAS`,
-      
-      fullDescription: `UMP Hult Prize is an entrepreneurship competition housed at CFERI.
+The purpose of hosting the HultPrize Local Competition at UMP was to inspire and mobilise students to become agents of change within their communities and beyond. The event aimed to cultivate an entrepreneurial mindset among students, encouraging them to design sustainable, impact-driven business solutions that contribute to social, economic, and environmental development.`
+          },
+          {
+            heading: 'EXPECTED OUTCOMES',
+            content: `The Hult Prize UMP Local Competition held on 24 February 2026 was designed not only to identify a winning team but also to create long-term impact within the University of Mpumalanga entrepreneurial ecosystem.
 
-A PLATFORM FOR BUSINESS IDEAS`,
-      
-      whatToExpect: [
-        'An opportunity to turn your start up into a real business',
-        'A community of entrepreneurs',
-        'Networking opportunity',
-        'Global exposure',
-        'Business pitching skills',
-        'Business funding'
-      ],
-      
-      benefits: [
-        'You have a chance to turn your idea into a real business, with guidance, support, and possible funding through the Hult Prize.',
-        'You learn useful skills like leadership, teamwork, problem-solving, and how to pitch ideas confidently.',
-        'You get to work on real problems in society and help create solutions that make a positive impact.',
-        'You meet and connect with students, and entrepreneurs from around the world.',
-        'Opportunity to win US$1 million in seed funding at the Global Finals'
-      ],
-      
-      stages: [
-        {
-          name: 'STAGE 1: Campus Competition',
-          description: 'Hosted at individual universities. Student teams pitch their startup ideas. One winning team per campus advances. Focus: problem clarity, impact, and business potential.'
-        },
-        {
-          name: 'STAGE 2: National Competition',
-          description: 'Campus winners compete at national or regional summits. More competitive, with expert judges and mentors. Top teams move forward to the global pathway.'
-        },
-        {
-          name: 'STAGE 3: Digital Incubator',
-          description: 'Teams that didn\'t win campus rounds can still apply online. Requires a strong pitch deck and traction. Selected teams join the next stage.'
-        },
-        {
-          name: 'STAGE 4: Digital Accelerator',
-          description: 'Around 20–25 top teams worldwide are selected. 6–8 weeks of: Mentorship, Business model refinement, Pitch coaching. Hosted in partnership with leading global institutions.'
-        },
-        {
-          name: 'STAGE 5: Global Finals',
-          description: 'Final teams pitch on a global stage. Judged by world-class entrepreneurs and investors. One team wins US $1 million in seed funding.'
+The anticipated outcomes of the event include the following:
+• Participation in the Bootcamp is expected to equip Eco-Polish with advanced mentorship, business model refinement, pitch enhancement skills, and strategic guidance to strengthen their competitiveness at national level.
+• The success of Eco-Polish, along with strong performances by RitaVita Naturals (Second Runner-Up) and SM Vision Works (Third Runner-Up), is anticipated to raise awareness and inspire broader student participation in future entrepreneurial initiatives.
+• The competition is expected to foster a culture of innovation, leadership, collaboration, and problem-solving among students, encouraging more impact-driven ventures in the future.
+• Awarding tokens of appreciation to the top three teams is anticipated to motivate continued commitment, resilience, and growth among participants, reinforcing the value of their efforts.
+• Through participation in the broader Hult Prize Foundation movement, the event is expected to contribute to developing socially responsible entrepreneurs who create sustainable solutions aligned with global development priorities.
+
+Overall, the anticipated outcomes extend beyond competition day, aiming to position UMP as a hub for innovative, socially conscious entrepreneurship while empowering Eco-Polish to compete confidently at the National Competition stage.`
+          },
+          {
+            heading: 'OBJECTIVES',
+            content: `The following objectives were outlined as the most suitable for the HultPrize UMP Local Competition event:
+• Provide students with an opportunity to pitch innovative social enterprise ideas.
+• Promote entrepreneurship and innovation on campus.
+• Encourage solutions that align with the United Nations Sustainable Development Goals (SDGs).
+• Select the most outstanding team to represent UMP at the next stage of the Hult Prize competition.
+• Foster collaboration, leadership, and problem-solving skills among participants.`
+          },
+          {
+            heading: 'PLANNING AND LOGISTICS',
+            content: `The event was meticulously planned by the UMP CFERI team, which included Director, Business Development Officer, Administrators, Interns, HultPrize organizing representatives (Executive members).
+
+Key logistical considerations were organized as follows:
+Venue: Building 12, Lecture Hall
+Date and Time: 24TH February 2026, from 08h00-16h00
+
+Program Overview:
+• The Program Director of the event was Ms. Caroline Seitshiro (Business Development Intern- CFERI).
+• The attendance register was facilitated by Ms. Thembelihle Kunene (HultPrize UMP Marketing Officer).
+• Opening and welcoming was done by Mr. Tsumbedzo Ramadi Madzivhandila (HultPrize UMP Campus Director).
+• Start-ups owners were the first ones to take on the stage.
+• Keynote addresses were made by Mr. Given Risenga (Standard Bank Representative), Ms. Confidence Ndlovu (Introducing the Judges), and Mr. Siyabonga Jele and Mr. Innocent Masilela (Inspiration from studentpreneurs).
+• Vote of thanks was done by Ms. Kholofelo Makhubupetsi.`
+          },
+          {
+            heading: 'TARGET GROUP',
+            content: `The event specifically targeted students who are interested in businesses and start-up owners, with an expected turnout of 100 attendees. The following Eleven (11) Start-ups made it through for the presentations namely: MyUMP (1 presenter), SAYECO (2 presenters), Vertixcel Farms (1 presenter), Eco-Polish (1 Presenter), RitaVita Naturals(2 presenters), Renova Blessed (1 presenter), Campustyle (1 presenter), SM Vision works (2 presenters), Seluleko Consulting (1 presenter), Campusknit Studio (1 presenter), and Beauty Face (1 presenter) giving the total of 14 presenters.`
+          },
+          {
+            heading: 'IMPLEMENTATION',
+            content: `The event's successful implementation was made possible through the collaborative efforts of the UMP CFERI team, including:
+• HultPrize UMP Organizing Team: Coordinated the event's activities, marking the attendance register, served as ushers, start-ups registrations and ensured that all logistics required are received and utilized.
+• UMP CFERI Staff: Assisted in approving the proposal to host local competition, providing refreshments and the venue. Additionally, they assisted in providing the photographer, inviting external stakeholders for motivational engagement, securing judges and providing token of appreciation to the top 3 presenters.
+• Photographer: was responsible for capturing all the presentations and making sure that there's visibility for all the audience.
+• Logistical Support: Included the setup of sound systems, tables, chairs, presentations' equipment, microphones, and refreshment stations. Water dispensers were also available throughout the event to ensure the comfort of attendees.
+• IT Agents: to display PowerPoint presentations and technical support in all activities.`
+          },
+          {
+            heading: 'MARKETING STRATEGY',
+            content: `The marketing strategy for the HultPrize UMP local competition event was fully done by all involved stakeholders (UMP CFERI staff members, and HultPrize organizing team) and poster by Mr. Tsumbedzo Ramadi Madzivhandila (HultPrize UMP Campus Director) which was then circulated in all social media platforms.`
+          },
+          {
+            heading: 'BUDGET',
+            content: `The UMP CFERI division provided a budget for refreshments and other logistic resources required for event to actively take place. The budget did cover for refreshments and gifts for the top 3 presenters.`
+          },
+          {
+            heading: 'CONCLUSION AND OUTCOMES',
+            content: `The Hult Prize UMP Local Competition held on 24th February 2026 concluded on a high note, showcasing the exceptional creativity, innovation, and entrepreneurial spirit of students at the University of Mpumalanga. The event successfully achieved its purpose of identifying and empowering student-led social enterprises with the potential to create meaningful and sustainable impact within communities.
+
+After a competitive pitching session and careful deliberation by the judging panel, the top three teams were announced as follows:
+• Winner: Eco-Polish
+• Second Runner-Up: RitaVita Naturals
+• Third Runner-Up: SM Vision Works
+
+The winning team, Eco-Polish Startup, distinguished itself through a compelling presentation, innovative solution, and strong alignment with sustainable development principles. As a result, Eco-Polish was officially selected to represent UMP Hult Prize at the next stage of the competition.
+
+All three top teams received tokens of appreciation in recognition of their outstanding effort, commitment, and entrepreneurial excellence. Their participation reflected not only the depth of talent at UMP CFERI but also the growing culture of social innovation on campus.
+
+An important announcement was also made regarding the upcoming Bootcamp and National Competition, which will be hosted on the 27th–28th of March 2026 in Cape Town. The Bootcamp will provide teams with mentorship, refinement opportunities, and strategic guidance to strengthen their business models before competing at national level.
+
+In conclusion, the HultPrize UMP Local Competition 2026 was a resounding success. It strengthened entrepreneurial engagement among students, fostered collaboration and leadership, and positioned Eco-Polish Startup to proudly carry the UMP flag at the National Competition. The event reaffirmed the University of Mpumalanga's commitment to nurturing innovative leaders capable of transforming ideas into impactful enterprises.`
+          },
+          {
+            heading: 'REPORT ON THE RECENT PROGRAMS',
+            content: `The Centre for Entrepreneurship Rapid Incubator (UMPCFERI) successfully hosted the Hult Prize UMP Local Competition for the first time on 24 February 2026 as part of the global Hult Prize Foundation movement, which challenges university students to develop viable and profitable social enterprises that address pressing societal needs while generating sustainable economic output. The primary purpose of the event was to cultivate an entrepreneurial mindset among students, stimulate innovation, and empower young leaders to design sustainable, impact-driven solutions aligned with global development priorities.
+
+The competition attracted high-potential student entrepreneurs [14 presenters] and demonstrated UMP's commitment to producing graduates who are not only job seekers but also job creators, capable of contributing to socio-economic transformation.
+Eco-Polish [2nd year student, producing polish from plastic] emerged as the overall winner chosen by the adjudicators, with Rita Vita Naturals [Ph.D. working on commercialising her research on wild fruit functional foods] and SM Vision Works [2nd year BICT student creating software for the education and agricultural sectors] as second and third runners-up respectively.
+
+Notably, the national organisers subsequently invited an additional UMP start-up [Rita Vita Naturals] to the National Bootcamp and Competition in Cape Town, acknowledging that the University hosts more than one high-potential venture, although only one representative was initially expected.
+UMPCFERI has requested that a single team member attend in order to contain institutional costs at this stage. Should the selected student entrepreneurs progress, they will advance to the Global Accelerator stage for bootcamps and compete with leading ventures worldwide.
+In addition, a formal nomination has been received for the Hult Prize Coordinator of the Year, recognising the UMPCFERI's sustained contribution and support to entrepreneurship development on campus. Standard Bank officials were also present to provide support and present opportunities for entrepreneurs.`
+          },
+          {
+            heading: 'TIA-YAEI YOUTH ENTREPRENEURSHIP CHALLENGE – 12 MARCH',
+            content: `The Young African Entrepreneurs Institute (YAEI) requested the University of Mpumalanga Centre for Entrepreneurship Rapid Incubator (UMPCFERI) to co-host the Technology Innovation Agency (TIA) Youth Technology Innovation Provincial Competition held this Thursday as part of the build-up to the National South African Innovation Week (SAIW) 2026. UMPCFERI provided the venue, coordinated entrepreneur recruitment, secured a judge (Dr. Siyabonga Mgoduka), and supported programme delivery through a Program Director and Time Keeper, while YAEI covered all catering costs. The competition attracted 28 registered contestants comprising studentpreneurs, alumni, and community MSMEs. Following rigorous adjudication, ten innovators were selected to represent Mpumalanga at the national stage, including a current UMP studentpreneur, a UMP alumnus, and a community MSME previously supported by UMPCFERI.
+
+The results demonstrate a strong pipeline of innovation supported by the Centre, with three of the top ten having previously participated in the Hult Prize competition, two alumni entrepreneurs, and two incubated community SMMEs among the finalists—evidence of sustained progression through entrepreneurship support programmes. The next step is confirmation by TIA and YAEI of the dates for the National South African Innovation Week, where all ten winners will be transported and accommodated with expenses covered. At the national level, participants will compete for significant funding opportunities to develop prototypes, advance technological innovations, and support business scale-up. This outcome positions UMP through UMPCFERI as key contributors to regional innovation development while expanding opportunities for student and community entrepreneurs to access national platforms and resources.`
+          },
+          {
+            heading: 'UGO INITIATIVE AND PROPOSED CUSTODIANSHIP BY UMPCFERI – 13 MARCH',
+            content: `Following the recent meeting with UGO student representatives, a formal request has been made for UMPCFERI to serve as the primary institutional custodian of the UGO Initiative at UMP. This role would enable the Centre to coordinate and expand access to international leadership and exchange opportunities for UMP students, particularly those demonstrating strong interest in sustainable development, entrepreneurship, and societal impact. The programme offers substantial benefits, including leadership and professional development, exposure to global networks, and collaboration with peers across Africa. Importantly, UGO covers major participation costs, including local and international travel, accommodation, and related expenses. Previous cohorts reportedly received funded travel, passport support, and subsistence allowances.
+
+The fellowship spans 90 days, comprising 83 days of structured virtual leadership and skills development, followed by a 7-day inter-country immersion programme, and concludes with a Fellowship Summit and formal induction into the UGO Alumni Network. The curriculum aligns closely with UMP's strategic priorities and UMPCFERI's mandate, covering modules on 1. Ethical Leadership, 2. Sustainability and Environmental Stewardship, 3. Social Entrepreneurship and Green Economy Innovation, 4. Technology and Systems Thinking, 5. Community Development and Pan-African Collaboration, and 6. Diplomatic Protocol and International Etiquette delivered in partnership with the Department of International Relations and Cooperation (DIRCO). The programme is designed to develop globally competent, ethically grounded young leaders capable of driving sustainable solutions within their communities and beyond.
+
+To ensure successful participation and programme completion, UMPCFERI proposes prioritising nominations from CFERI interns in the initial intake, subject to travel readiness and demonstrated commitment to the full training cycle. This approach will allow the Centre to pilot coordination mechanisms while supporting high-potential students who can effectively represent UMP internationally. The UGO team has also shared a sample Memorandum of Understanding previously signed with another university for institutional review and guidance on formalising the partnership.`
+          },
+          {
+            heading: 'BRIEF ACHIEVEMENT REPORT - OCTOBER – DECEMBER 2025',
+            content: `**Strategic Area 1: Governance, Strategic Leadership, And Management**
+
+**Key Achievements:**
+
+1. **SEDFA Grant Compliance and Performance Management**
+UMPCFERI received formal confirmation of a 91% performance rating from SEDFA based on Q2 KPI verification, with Q3 verification successfully submitted and internally audited.
+Impact: The Centre qualified for a full tranche payment and demonstrated strong governance, compliance, and impact accountability systems.
+
+2. **Effective Governance Structures and Meetings**
+The Centre convened its Advisory Strategic Planning session, Board meeting, staff monthly meetings, and multiple strategic engagements with internal and external stakeholders.
+Impact: These structures strengthened strategic oversight, ensured alignment with institutional priorities, and enhanced decision-making effectiveness.
+
+3. **Market Exhibition Day, Stakeholder Engagement Session, and SWEEP Conversations [27 October 2025]**
+On 27 October 2025, the University of Mpumalanga Centre for Entrepreneurship and Rapid Incubator (UMPCFERI) hosted an event that included a Stakeholder Engagement Session, Market Day Exhibition, and SWEEP Conversations. This event aimed to introduce the new Vice-Chancellor, Professor Thenjiwe Meyiwa, to strategic partners and strengthen collaborations. Key discussions highlighted the presentation of an award-winning, innovative cassava and peanut project, emphasizing the potential for local economic impact and agro-processing. The Vice-Chancellor motivated partners to rethink their roles as co-creators of transformation. The Market Day Exhibition showcased over 20 student and community SMME entrepreneurs, providing them with visibility and learning opportunities from one another. Overall, the event reinforced UMPCFERI's commitment to fostering inclusive entrepreneurship and community empowerment through collaboration and innovation.
+
+The Vice-Chancellor's involvement in an exhibition significantly enhanced support for student entrepreneurs by engaging directly with them, which demonstrated the university's commitment to their entrepreneurial pursuits. This hands-on approach enabled university leadership to gain a deeper understanding of the challenges faced by student-led businesses, facilitating the development of targeted support initiatives. The exhibition created a networking environment for student entrepreneurs, promoting collaboration, sustainability, and adaptability. Additionally, the SWEEP Conversations played a crucial role in advancing gender equity in entrepreneurship, serving as a platform for dialogue between male and female entrepreneurs. These discussions highlighted systemic barriers that hinder women's participation, emphasizing the need for mentorship and increased policy awareness. Overall, the events reflected the University of Mpumalanga's dedication to inclusivity and empowerment for sustainable economic growth.
+
+**Strategic Area 2: Research And Knowledge Generation**
+
+**Key Achievements:**
+
+4. **Applied Entrepreneurship Research and Knowledge Production**
+The BIWA 2nd International Conference on Business Innovation and Incubation highlighted the critical role universities play in driving entrepreneurial ecosystems through contextualized incubation, research commercialization, and community-rooted innovation. A key highlight for UMP was the presentation of the paper "Investigating the Efficacy of University-Led Business Incubators on Graduate Unemployment" by Mrs. Melody Chiume and Ms. Lethabo Maponya. The session generated strong engagement and valuable feedback, and the study was commended for its practical relevance, policy implications, and academic contribution. Importantly, the paper has been accepted for journal publication, pending reviewers' comments—an achievement that elevates UMP CFERI's research profile and affirms its growing influence in incubation scholarship. Reviewers and participants strongly encouraged the continuation of this research trajectory, recommending deeper exploration into university incubators' role in commercializing institutional intellectual property and strengthening incubation models that link innovation to national economic development
+Impact: This strengthened UMP's contribution to national and international entrepreneurship scholarship and reinforced evidence-based incubation practice. Academic article on University-Led Business Incubation scheduled for publication on the 14th of January 2026.
+
+5. **ASIP Conference 2025**
+The University of Mpumalanga (UMP), through the Centre for Entrepreneurship and Rapid Incubation (CFERI), successfully participated in the Asian Society of Innovation and Policy (ASIP) Conference 2025 held on 4–5 December 2025 at the Cambodia University of Technology (CamTech) in Phnom Penh, Cambodia. The conference brought together policymakers, academics, and industry leaders from Asia and Africa to engage on digital innovation, governance, entrepreneurship, and innovation policy. UMP made notable academic contributions through paper presentations by its postgraduate researchers, strengthening the institution's visibility within the Asia–Africa innovation ecosystem. A significant highlight of the conference was the paper authored by Prof. Kanayo Ogujiuba and presented by Ms. Lethabo Maponya, titled "Governance, Digital Innovation, and Entrepreneurship in South Africa: Navigating the Fourth Industrial Revolution," which was awarded 1st Place for Best Paper, accompanied by a USD 300 prize. This achievement underscores UMP's growing research excellence and CFERI's strategic role in advancing policy-oriented scholarship, global collaboration, and innovation-led entrepreneurship discourse.
+
+6. **Research-Based Studentpreneurship Development**
+Three postgraduate studentpreneurs proceeded to the National EDHE final competitions, where they won a laptop together with all participants:
+6.1. Ms. Sinorita Chauke (PhD Candidate)[ Supervised by Dr. Thepiso Ndlovu] – Founder of RitaVita Naturals
+• Inspired by her Master's research, Nutraceutical Properties of Wild Fruits in Mpumalanga, Sinorita identified the underutilization of indigenous fruits rich in minerals like calcium, iron, and zinc.
+• Through CFERI incubation, she transformed her idea into RitaVita Naturals, a health-focused enterprise that promotes nutritional wellness through locally sourced fruit products.
+6.2. Ms. Noluthando Kubhayi – Master of Arts Student & Entrepreneur
+Master of Arts (Sociology) student at the University of Mpumalanga
+Research topic: "Investigating the Implications of Synthetic Hair on Black South African Women: A Case Study of Unemployed Black Women in Mangweni Village, Mpumalanga."
+Supervisor: Dr. Mhandu | Co-supervisor: Dr. Sokani
+Integrated her research focus into her business, Anami Beauty, to align academic and entrepreneurial goals
+Actively involved in CFERI academic research, business modelling, and entrepreneurship competitions
+Transformed her hair business into a social enterprise addressing community impact and self-image
+Developed and currently selling a colouring book that promotes natural hair appreciation among young girls and boys
+6.3. Ms. Zoleka Mkhize (Master's Candidate) – Founder of Greenactive
+• Developed Green active after her Honours research "Evaluating Factors Affecting Youth Participation in Agricultural Cooperatives in Mbombela."
+• Refined her entrepreneurial and public speaking skills through CFERI mentorship, bootcamps, and the EDHE Intervarsity Competition, advancing to the regional level.
+• Her Master's study on "Impacts of Land Abandonment and Revitalisation Programs on Smallholder Farmer Welfare in Mbhashe" builds on her passion for agricultural revitalisation.
+Through Green Active, Ms. Zoleka aims to create technology-driven tools that empower smallholder farmers and promote community-centered agriculture and food security.
+These studentpreneurs, with academic research-based business ideas, were supported in developing research-driven business concepts. Notably, one student won a regional competition, two presented at regional rounds, and one advanced to the national finals.
+
+Impact: This advanced the commercialisation of research outputs and reinforced UMP's innovation pipeline.
+
+7. **Policy Research and Advisory Contribution**
+UMPCFERI co-hosted consultative engagements informing the Mpumalanga Informal Sector Policy, integrating insights from municipalities and informal traders. Presented the draft Policy on the 11th of December 2025 and have edited it to be shared with a stakeholder before sending it to the DEDT.
+
+Impact: The Centre is contributing to positioning UMP as a strong influence in the development of inclusive policies and strengthening its role as a provincial thought leader in entrepreneurship and informal economy development.
+
+**Strategic Area 3: Teaching And Learning**
+
+**Key Achievements:**
+
+8. **Entrepreneurship Skills Development Programmes**
+UMPCFERI delivered multiple structured interventions, including weekly business pitching and coaching sessions for studentpreneurs and community SMMEs. Notably, the 4-week Standard Bank Financial Literacy program. The Standard Bank Enterprise Banking Programme: Wallet Wise is a four-week, free financial literacy training initiative designed to empower historically disadvantaged entrepreneurs in Mbombela. Scheduled from October 16 to November 6, 2025, the program comprises weekly sessions that cover essential financial skills, including income statements, taxation, costing, and budgeting, culminating in a graduation ceremony with prizes and potential funding opportunities for participants. Key stakeholders include Standard Bank and UMPCFERI, facilitating an inclusive learning platform for aspiring MSME owners and student entrepreneurs. Participants, categorized into incubators and accelerators, learned practical business management skills and received recognition and awards for their businesses.
+
+Impact: Participants improved their investor readiness, communication skills, and business model clarity, contributing to increased competition success and enhanced funding preparedness.
+
+9. **Short Learning Programme (SLP) Development**
+A dedicated writing retreat resulted in completed draft documentation for Entrepreneurship Development and Innovation Programmes and Entrepreneurship Skills Training SLPs.
+Impact: These programmes enhance structured entrepreneurship education and support institutional income generation and skills certification.
+
+10. **Entrepreneurial Planning Institute- Financial Literacy Training**
+Six studentpreneurs and SMMEs completed the LearnBiz Financial Literacy Accelerator Programme,
+Impact: Participants reported improved financial management, increased revenue growth, and enhanced expenditure tracking, thereby strengthening business sustainability.
+
+**Strategic Area 4: Planning And Institutional Support**
+
+**Key Achievements:**
+
+11. **Incubation Infrastructure Utilisation**
+Three studentpreneurs utilised private offices, while over 20 consistently accessed shared co-working spaces.
+Impact: This enabled business operations, collaboration, and professionalisation, while highlighting demand for expanded infrastructure.
+
+12. **Commercial Progress of Incubated Enterprises**
+Resident studentpreneurs secured vendor status, corporate clients, international training opportunities, and revenue-generating contracts.
+
+Impact: These outcomes demonstrate the commercial viability of incubated businesses and the effectiveness of UMPCFERI's support systems.
+
+**Strategic Area 5: Quality Student Experience**
+
+**Key Achievements:**
+
+13. **Market Exhibition Day and Stakeholder Engagement**
+UMPCFERI hosted a Market Exhibition Day and Stakeholder Engagement Session attended by the Vice-Chancellor and key partners.
+Impact: Studentpreneurs gained visibility, confidence, and direct institutional support, strengthening their entrepreneurial identity.
+
+14. **SWEEP Conversations and Annual Conference**
+The SWEEP Annual Conference and Siyabuswa engagement celebrated women in leadership and entrepreneurship, attracting over 100 participants.
+The 2025 UMPCFERI SWEEP Annual Conference, themed "Celebrating Women in Leadership," took place on November 7, 2025, at the University of Mpumalanga, attracting over 100 attendees, including students, staff, and external stakeholders. The conference celebrated women's leadership and aimed to empower young women while reflecting on the SWEEP Chapter's journey from 2022 to 2025. The welcoming address by Prof. Dhavhana Maselesele emphasized the university's commitment to prioritizing student leadership and development. The keynote by Ms. Ntsiki Mkhize focused on ethical leadership and the transformative impact of SWEEP in enhancing women's involvement in entrepreneurship. She stressed the importance of collaboration among various stakeholders to foster inclusive growth. The conference included a panel discussion featuring successful SWEEP members, who shared their entrepreneurial journeys, highlighting resilience and the support received from the SWEEP program. Additionally, a presentation showcased the SWEEP Chapter's milestones and achievements, reinforcing its role in empowering young women at the university.
+The presentation detailed the positive impact of UMP SWEEP in empowering young women through confidence-building, academic improvement, and the development of leadership skills, while also promoting entrepreneurship. Emphasizing the organization's role in fostering a supportive sisterhood and aligning student development with national economic priorities, students reflected on the significant progress made over the past three years. The event featured a Recognition Awards Ceremony honouring mentors and top female student entrepreneurs, acknowledging their contributions to entrepreneurship and leadership within the UMP community. The conference achieved strong attendance, enhanced institutional visibility for UMP SWEEP, and emphasized the importance of collaboration among various organizations. Key recommendations moving forward include establishing a structured mentorship program for budding entrepreneurs.
+
+Impact: These initiatives advanced gender equity, leadership development, and inclusive entrepreneurship among women students.
+
+15. **Siyabuswa- Student Women Entrepreneurship Event**
+UMPCFERI celebrated strength, sisterhood, and success during the UMP SWEEP Unfold End-of-Year Function held at the Siyabuswa campus on November 14. This event highlighted the achievements of women and emphasized the importance of mutual support within the community. It served as a powerful reminder of what can be accomplished when women uplift one another. The day was marked by recognition of the contributions of various individuals, including Ms. Confidence Ndlovu, Ms. Cynthia Moshaba, Mr. Asheley Malebe, and Ms. Bongiwe Nkosi, who played significant roles in making 2025 an unforgettable year for the Siyabuswa student women and staff.
+
+**Strategic Area 6: Engagement And Partnerships**
+
+**Key Achievements:**
+
+16. **National and International Partnerships Strengthened**
+Active collaborations were sustained with SEDFA, EDHE, Standard Bank, ABSA, YAEI, Eskom, UNIIC, and international universities.
+
+17. **EDHE recognised UMPCFERI as one of the top 7 Entrepreneurship Champion teams in the country, championing entrepreneurship at the University.**
+
+Impact: These partnerships expanded access to funding, platforms, mentorship, and global exposure for studentpreneurs.
+
+18. **International Competitions and Recognition**
+UMPCFERI studentpreneurs secured first place at the Intra-Africa 2063 Competition in Egypt and recognition at UNIIC platforms. The UMPCFERI team secured position 6 out of 14 for a business idea and first place for the Best Paper award, earning $US300.
+Impact: This enhanced UMP's global visibility and demonstrated the competitiveness of its entrepreneurship ecosystem.
+
+**Key Achievements Summary:**
+1. UMPCFERI Team wins 1st place in the Intra-Africa Egypt Competition
+2. 2 studentpreneurs proceed to the EDHE National competitions, 1 won 25,000 as 1st place under Existing Business Tech.
+3. Studentpreneur 1st Year Mr. Sandile Mzimba wins 30,000 at the Sustainable Development Solutions Network,
+4. Mr. Sandile Mzimba won as the top ABSA YAEI entrepreneur at the National Youth Entrepreneurship tour. 4 more students and community SMMEs were part of the Top 10 Nationally. 5 studentpreneurs within the top 10 and 3 community SMMEs.
+5. Community SMME and alumni awarded prizes at the Standard Bank Financial Literacy pitching Contest
+6. Studentpreneurs and Community SMMEs win top 3 places at the Charged-up Africa Network competition
+
+**Strategic Area 7: Financial Sustainability**
+
+**Key Achievements:**
+
+19. **Achievement of Key Impact Indicators**
+By the end of Q3, UMPCFERI had achieved or exceeded most of its annual SEDFA targets, including the number of MSMEs supported, jobs created, jobs sustained, and turnover growth.
+Impact: SEDFA shall pay the full grant for the CFERI SEDFA Grant Cost Code.
+This confirms efficient resource utilisation and strong return on public funding investment.
+
+20. **Readiness for Graduation and Exit Audits**
+Although no graduations were scheduled for Q3, systems are in place for graduation audits in Q4, as incubation agreements are set to conclude in March 2026.
+Impact: This ensures compliance with incubation lifecycle requirements and accurate reporting of impacts.
+
+**Strategic Area 8: Human Resources**
+
+**Key Achievements:**
+
+21. **Capacity Building and Staff Development**
+Staff participated in national and international conferences, benchmarking visits, and curriculum development activities.
+Impact: This enhanced institutional capability, staff expertise, and programme quality.
+
+**Overall Quarter Impact**
+Institutional and Ecosystem Impact
+UMPCFERI exceeded key performance indicators, achieved national and international recognition, strengthened internal and external partnerships, and expanded entrepreneurship education and research outputs.
+Impact: The Centre continues to position the University of Mpumalanga as a leading hub for entrepreneurship, innovation, and inclusive economic development.`
+          }
+        ],
+        authors: ['Tsumbedzo Ramadi-Madzivhandila', 'Caroline Seitshiro'],
+        contactDetails: ['076 405 5974', '071 165 8591'],
+        campus: 'Mbombela campus',
+        division: 'UMPCFERI',
+        eventDate: '24 FEBRUARY 2026',
+        submissionDate: '03 MARCH 2026',
+        socialLinks: {
+          linkedin: 'https://www.linkedin.com/in/ump-centre-for-entrepreneurship-0256bb282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+          facebook: 'https://www.facebook.com/ump.sweep.chapter?mibextid=JroKGi',
+          instagram: 'https://www.instagram.com/ump_sweep_chapter?igsh=MTJnNG9mM20xZGF6ZQ==',
+          cferiInstagram: 'https://www.instagram.com/umpcferi?igsh=YzAwZjE1ZTI0Zg==',
+          hultPrizeActivity: 'https://www.linkedin.com/posts/hultprize-ump-457aa03a2_hultprize-hultprizeump-entrepreneurship-activity-7439302210296913920-w0Ru?utm_source=share&utm_medium=member_android&rcm=ACoAAGLCxIMBfZbwbKK8WN543qOapRkxcHhax2M',
+          eventFacebook: 'https://www.facebook.com/share/p/1DLRN6zwc6/',
+          eventInstagram: 'https://www.instagram.com/p/DV8o3uNDB1I/?igsh=MWp6eTl1bHR1NGJ3NQ==',
+          tiktok: 'https://vt.tiktok.com/ZSu9D8Jqf/'
         }
-      ],
-      
-      minimumRequirements: [
-        'Students must be UMP registered for the academic year 2026',
-        'A startup one-pager (summary of your idea and value proposition)',
-        'Each Start-up must have a one or two SDGs in focus',
-        'Start-ups must include 2-4 members'
-      ],
-      
-      contactInfo: {
-        phone1: '076 405 5974',
-        phone2: '063 433 8371',
-        email: 'hult@umpcferi.ac.za',
-        location: 'University of Mpumalanga, Mbombela Campus'
-      },
-      
-      spotlight: 'Tsumbedzo Ramadi Madzivhandila',
-      
-      objectives: [
-        'Engage students in social entrepreneurship',
-        'Develop innovative solutions to global challenges',
-        'Provide platform for students to showcase ideas',
-        'Connect students with global entrepreneurship network',
-        'Foster cross-disciplinary collaboration'
-      ],
-      
-      eligibility: [
-        'Students must be UMP registered for the academic year 2026',
-        'Start-ups must include 2-4 members',
-        'Each Start-up must have a one or two SDGs in focus',
-        'A startup one-pager (summary of your idea and value proposition)'
-      ],
-      
-      partners: ['HULT Prize Foundation', 'United Nations', 'Various corporate partners'],
-      contact: 'hult@umpcferi.ac.za',
-      social: {
-        instagram: 'https://www.instagram.com/hultpump'
-      },
-      applicationDeadline: 'February 2025',
-      nextCohort: 'March - May 2025'
+      }
     }
   ];
 
@@ -874,7 +1070,7 @@ A PLATFORM FOR BUSINESS IDEAS`,
               )}
 
               {/* Objectives (for SWEEP & SABYA) */}
-              {selectedSectionProgram.objectives && (
+              {selectedSectionProgram.objectives && selectedSectionProgram.id !== 'hult' && (
                 <div className="modal-section">
                   <h3>Key Objectives</h3>
                   <ul className="modal-list">
@@ -913,63 +1109,68 @@ A PLATFORM FOR BUSINESS IDEAS`,
                 </div>
               )}
 
-              {/* What to Expect (for HULT) */}
-              {selectedSectionProgram.whatToExpect && (
+              {/* Event Report (for HULT) */}
+              {selectedSectionProgram.eventReport && (
                 <div className="modal-section">
-                  <h3>What to Expect</h3>
-                  <ul className="modal-list">
-                    {selectedSectionProgram.whatToExpect.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {/* Stages (for HULT) */}
-              {selectedSectionProgram.stages && (
-                <div className="modal-section">
-                  <h3>Stages of Hult Prize</h3>
-                  {selectedSectionProgram.stages.map((stage, index) => (
-                    <div key={index} style={{ marginBottom: '1.5rem' }}>
-                      <h4 style={{ color: '#e31b23', marginBottom: '0.5rem' }}>{stage.name}</h4>
-                      <p>{stage.description}</p>
+                  <h3>{selectedSectionProgram.eventReport.title}</h3>
+                  {selectedSectionProgram.eventReport.sections.map((section, index) => (
+                    <div key={index} style={{ marginBottom: '2rem' }}>
+                      <h4 style={{ color: '#e31b23', marginBottom: '1rem', borderBottom: '2px solid #e31b23', paddingBottom: '0.5rem' }}>
+                        {section.heading}
+                      </h4>
+                      <div style={{ whiteSpace: 'pre-line', lineHeight: '1.6' }}>
+                        {section.content}
+                      </div>
                     </div>
                   ))}
-                </div>
-              )}
-
-              {/* Minimum Requirements (for HULT) */}
-              {selectedSectionProgram.minimumRequirements && (
-                <div className="modal-section">
-                  <h3>Minimum Requirements</h3>
-                  <ul className="modal-list">
-                    {selectedSectionProgram.minimumRequirements.map((item, index) => (
-                      <li key={index}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {/* Contact Info (for HULT) */}
-              {selectedSectionProgram.contactInfo && selectedSectionProgram.contactInfo.phone1 && (
-                <div className="modal-section">
-                  <h3>Contact Information</h3>
-                  <p><i className="fas fa-phone"></i> {selectedSectionProgram.contactInfo.phone1}</p>
-                  <p><i className="fas fa-phone"></i> {selectedSectionProgram.contactInfo.phone2}</p>
-                  <p><i className="fas fa-map-marker-alt"></i> {selectedSectionProgram.contactInfo.location}</p>
-                </div>
-              )}
-
-              {/* Spotlight (for HULT) */}
-              {selectedSectionProgram.spotlight && (
-                <div className="modal-section">
-                  <h3>Spotlight</h3>
-                  <p><strong>{selectedSectionProgram.spotlight}</strong></p>
+                  <div style={{ marginTop: '2rem', padding: '1rem', backgroundColor: '#f8f9fa', borderRadius: '8px' }}>
+                    <h4 style={{ color: '#242753', marginBottom: '1rem' }}>Report Details</h4>
+                    <p><strong>Written by:</strong> {selectedSectionProgram.eventReport.authors.join(', ')}</p>
+                    <p><strong>Contact:</strong> {selectedSectionProgram.eventReport.contactDetails.join(', ')}</p>
+                    <p><strong>Campus:</strong> {selectedSectionProgram.eventReport.campus}</p>
+                    <p><strong>Division:</strong> {selectedSectionProgram.eventReport.division}</p>
+                    <p><strong>Event Date:</strong> {selectedSectionProgram.eventReport.eventDate}</p>
+                    <p><strong>Submission Date:</strong> {selectedSectionProgram.eventReport.submissionDate}</p>
+                  </div>
+                  {selectedSectionProgram.eventReport.socialLinks && (
+                    <div style={{ marginTop: '2rem', padding: '1rem', backgroundColor: '#f0f8ff', borderRadius: '8px' }}>
+                      <h4 style={{ color: '#242753', marginBottom: '1rem' }}>Connect with UMPCFERI</h4>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center' }}>
+                        <a href={selectedSectionProgram.eventReport.socialLinks.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5', textDecoration: 'none', fontSize: '24px' }} title="LinkedIn">
+                          <i className="fab fa-linkedin"></i>
+                        </a>
+                        <a href={selectedSectionProgram.eventReport.socialLinks.facebook} target="_blank" rel="noopener noreferrer" style={{ color: '#1877f2', textDecoration: 'none', fontSize: '24px' }} title="Facebook (SWEEP)">
+                          <i className="fab fa-facebook-f"></i>
+                        </a>
+                        <a href={selectedSectionProgram.eventReport.socialLinks.instagram} target="_blank" rel="noopener noreferrer" style={{ color: '#e4405f', textDecoration: 'none', fontSize: '24px' }} title="Instagram (SWEEP)">
+                          <i className="fab fa-instagram"></i>
+                        </a>
+                        <a href={selectedSectionProgram.eventReport.socialLinks.cferiInstagram} target="_blank" rel="noopener noreferrer" style={{ color: '#e4405f', textDecoration: 'none', fontSize: '24px' }} title="Instagram (CFERI)">
+                          <i className="fab fa-instagram"></i>
+                        </a>
+                      </div>
+                      <h4 style={{ color: '#242753', marginTop: '1.5rem', marginBottom: '1rem' }}>Hult Prize Event Links</h4>
+                      <div style={{ display: 'flex', flexWrap: 'wrap', gap: '1rem', alignItems: 'center' }}>
+                        <a href={selectedSectionProgram.eventReport.socialLinks.hultPrizeActivity} target="_blank" rel="noopener noreferrer" style={{ color: '#0077b5', textDecoration: 'none', fontSize: '24px' }} title="LinkedIn Activity">
+                          <i className="fab fa-linkedin"></i>
+                        </a>
+                        <a href={selectedSectionProgram.eventReport.socialLinks.eventFacebook} target="_blank" rel="noopener noreferrer" style={{ color: '#1877f2', textDecoration: 'none', fontSize: '24px' }} title="Facebook Post">
+                          <i className="fab fa-facebook-f"></i>
+                        </a>
+                        <a href={selectedSectionProgram.eventReport.socialLinks.eventInstagram} target="_blank" rel="noopener noreferrer" style={{ color: '#e4405f', textDecoration: 'none', fontSize: '24px' }} title="Instagram Post">
+                          <i className="fab fa-instagram"></i>
+                        </a>
+                        <a href={selectedSectionProgram.eventReport.socialLinks.tiktok} target="_blank" rel="noopener noreferrer" style={{ color: '#000000', textDecoration: 'none', fontSize: '24px' }} title="TikTok Video">
+                          <i className="fab fa-tiktok"></i>
+                        </a>
+                      </div>
+                    </div>
+                  )}
                 </div>
               )}
 
               {/* Benefits */}
-              {selectedSectionProgram.benefits && (
+              {selectedSectionProgram.benefits && selectedSectionProgram.id !== 'hult' && (
                 <div className="modal-section">
                   <h3>Benefits</h3>
                   <ul className="modal-list">
@@ -981,7 +1182,7 @@ A PLATFORM FOR BUSINESS IDEAS`,
               )}
 
               {/* Eligibility */}
-              {selectedSectionProgram.eligibility && (
+              {selectedSectionProgram.eligibility && selectedSectionProgram.id !== 'hult' && (
                 <div className="modal-section">
                   <h3>Eligibility Criteria</h3>
                   <ul className="modal-list">

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { loginAdmin } from '../services/api';
+import { loginAdmin, setAuthToken } from '../services/api';
 import { useNavigate } from 'react-router-dom';
 import '../styles/admin.css';
 
@@ -18,7 +18,7 @@ const Login = ({ setAdmin }) => {
     try {
       const normalizedEmail = email.trim().toLowerCase();
       const { data } = await loginAdmin(normalizedEmail, password);
-      localStorage.setItem('admin', JSON.stringify(data));
+      setAuthToken(data.token);
       setAdmin(data);
       navigate('/admin/dashboard');
     } catch (err) {

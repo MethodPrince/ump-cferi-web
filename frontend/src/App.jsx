@@ -22,11 +22,6 @@ import './styles/ump-theme.css';
 function App() {
   const [admin, setAdmin] = useState(null);
 
-  useEffect(() => {
-    const stored = localStorage.getItem('admin');
-    if (stored) setAdmin(JSON.parse(stored));
-  }, []);
-
   const PrivateRoute = ({ children }) => {
     return admin ? children : <Navigate to="/admin/login" />;
   };

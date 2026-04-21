@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getBusinesses, getEvents, getMentors } from '../services/api';
+import { getBusinesses, getEvents, getMentors, setAuthToken } from '../services/api';
 import { Link, useNavigate } from 'react-router-dom';
 import '../styles/admin.css';
 
@@ -32,7 +32,7 @@ const Dashboard = ({ admin, setAdmin }) => {
   };
 
   const handleLogout = () => {
-    localStorage.removeItem('admin');
+    setAuthToken(null);
     if (typeof setAdmin === 'function') setAdmin(null);
     navigate('/admin/login');
   };
