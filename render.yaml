@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: ump-cferi-web
+    env: node
+    region: oregon
+    plan: free
+    branch: main
+    buildCommand: npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        scope: build
+      - key: PORT
+        value: "5000"
