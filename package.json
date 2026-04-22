@@ -1,15 +1,15 @@
 {
   "name": "ump-cferi-web",
   "version": "1.0.0",
-  "description": "UMP CFERI Platform",
-  "license": "MIT",
-  "scripts": {
-    "start": "cd backend && npm start",
-    "build": "cd frontend && npm run build",
-    "dev": "concurrently \"cd backend && npm start\" \"cd frontend && npm start\""
+  "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
   },
-  "devDependencies": {
-    "concurrently": "^8.0.1"
+  "scripts": {
+    "install-deps": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ..",
+    "build": "npm install && cd frontend && npm install && npm run build && cd ../backend && npm install && cd ..",
+    "start": "cd backend && npm start",
+    "dev": "cd backend && npm start"
   },
   "dependencies": {
     "dotenv": "^17.3.1",
