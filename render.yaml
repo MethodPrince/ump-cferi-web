@@ -6,6 +6,7 @@ services:
     plan: free
     branch: main
     buildCommand: npm run build
+    postBuildCommand: cd backend && node create-admin.js
     startCommand: npm start
     envVars:
       - key: NODE_ENV
