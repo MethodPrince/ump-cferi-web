@@ -28,7 +28,7 @@ app.use("/api/events", require("./routes/eventRoutes"));
 app.use("/api/mentors", require("./routes/mentorRoutes"));
 
 // Serve React app for all other routes
-app.get("*", (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
 });
 
