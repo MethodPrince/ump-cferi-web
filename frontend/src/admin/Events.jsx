@@ -144,8 +144,10 @@ const EventsAdmin = () => {
                   <option value="seminar">Seminar</option>
                   <option value="networking">Networking</option>
                   <option value="training">Training</option>
+                  <option value="Business Pitch">Business Pitch</option>
                   <option value="conference">Conference</option>
                   <option value="other">Other</option>
+                  
                 </select>
               </div>
             </div>
