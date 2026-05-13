@@ -20,7 +20,9 @@ import Programs from './pages/Programs';
 import './styles/ump-theme.css';
 
 function App() {
-  const [admin, setAdmin] = useState(null);
+  const [admin, setAdmin] = useState(
+  JSON.parse(localStorage.getItem("admin")) || null
+);
 
   const PrivateRoute = ({ children }) => {
     return admin ? children : <Navigate to="/admin/login" />;
